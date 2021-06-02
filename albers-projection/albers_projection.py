@@ -5,8 +5,8 @@ def albers_formula(bbox, coords):
   lon = coords[0]
   lat = coords[1]
 
-  # Earth's radius / latitude (TBC)
-  radius = 20
+  # What is this value? TBC
+  radius = 200
 
   # reference longitude and latitude
   lambda_0 = (bbox[0] + bbox[2]) / 2
@@ -24,7 +24,7 @@ def albers_formula(bbox, coords):
   rho_0 = (radius / n) * math.sqrt(c - (2 * n * math.sin(phi_0)))
 
   new_lon = rho * math.sin(theta)
-  new_lat = phi_0 - (rho * math.cos(theta))
+  new_lat = rho_0 - (rho * math.cos(theta))
 
   new_coords = [new_lon, new_lat]
 
