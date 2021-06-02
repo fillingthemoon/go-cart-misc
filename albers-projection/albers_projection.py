@@ -54,4 +54,5 @@ def albers_projection(dir, file_name):
 
 dir = './data/'
 file_name = 'angola.geojson'
+# file_name = 'world.geojson'
 albers_projection(dir, file_name)
