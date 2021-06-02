@@ -2,8 +2,6 @@ import json
 import math
 
 def albers_formula(bbox, coords):
-  print(coords)
-
   lon = coords[0]
   lat = coords[1]
 
@@ -30,7 +28,7 @@ def albers_formula(bbox, coords):
 
   new_coords = [new_lon, new_lat]
 
-  print(new_coords)
+  return new_coords
 
 def albers_projection(dir, file_name):
   file = open(dir + file_name)
@@ -40,14 +38,15 @@ def albers_projection(dir, file_name):
   bbox = geojson_data['bbox']
 
   new_geojson_data = geojson_data
+
   # iterate through GeoJSON coords
-  for feature in geojson_data['features']:
-    for multipolygon in feature['geometry']['coordinates']:
+  for i, feature in enumerate(geojson_data['features']):
+    for j, multipolygon in enumerate(feature['geometry']['coordinates']):
       # if len(multipolygon) > 1: 2nd polygon onwards are holes
-      for polygon in multipolygon:
-        for coords in polygon:
-          albers_formula(bbox, coords)
-          return
+      for k, polygon in enumerate(multipolygon):
+        for l, coords in enumerate(polygon):
+          new_coords = albers_formula(bbox, coords)
+          new_geojson_data['features'][i]['geometry']['coordinates'][j][k][l] = new_coords
 
   with open('data_converted/' + file_name.split('.')[0] + '_converted.geojson', 'w') as new_geojson_file:
     json.dump(new_geojson_data, new_geojson_file)
