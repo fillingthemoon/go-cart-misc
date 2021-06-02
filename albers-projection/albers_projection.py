@@ -2,6 +2,11 @@ import json
 import math
 
 def albers_formula(bbox, coords):
+  min_lon = bbox[0]
+  min_lat = bbox[1]
+  max_lon = bbox[2]
+  max_lat = bbox[3]
+
   lon = coords[0]
   lat = coords[1]
 
@@ -9,12 +14,12 @@ def albers_formula(bbox, coords):
   radius = 200
 
   # reference longitude and latitude
-  lambda_0 = (bbox[0] + bbox[2]) / 2
-  phi_0 = (bbox[1] + bbox[3]) / 2
+  lambda_0 = (min_lon + max_lon) / 2
+  phi_0 = (min_lat + max_lat) / 2
 
   # standard parallels
-  phi_1 = (phi_0 + bbox[3]) / 2
-  phi_2 = (phi_0 + bbox[1]) / 2
+  phi_1 = (phi_0 + max_lat) / 2
+  phi_2 = (phi_0 + min_lat) / 2
 
   n = (1/2) * (math.sin(phi_1) + math.sin(phi_2))
 
