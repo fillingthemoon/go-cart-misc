@@ -18,15 +18,14 @@ def albers_formula(bbox, coords):
   phi_0 = (min_lat + max_lat) / 2
 
   # standard parallels
-  phi_1 = (phi_0 + max_lat) / 2
-  phi_2 = (phi_0 + min_lat) / 2
+  phi_1 = 15 # (phi_0 + max_lat) / 2
+  phi_2 = 45 # (phi_0 + min_lat) / 2
 
   n = (1/2) * (math.sin(phi_1) + math.sin(phi_2))
 
   # TODO
   # if (math.sin(phi_1) + math.sin(phi_2)):
   #   Deal with this
-
 
   theta = n * (lon - lambda_0)
   c = ((math.cos(phi_1)) ** 2) + (2 * n * math.sin(phi_1))
@@ -49,12 +48,18 @@ def albers_projection(dir, file_name):
 
   new_geojson_data = geojson_data
 
-  # iterate through GeoJSON coords
+  # iterate through the country's features (i.e. states, provinces, etc.)
   for i, feature in enumerate(geojson_data['features']):
-    for j, multipolygon in enumerate(feature['geometry']['coordinates']):
-      # if len(multipolygon) > 1: 2nd polygon onwards are holes
-      for k, polygon in enumerate(multipolygon):
-        for l, coords in enumerate(polygon):
+
+    # iterate through the feature's polgyons (contained inside a MultiPolygon)
+    # if len(polygon) > 1: 2nd polygon onwards are holes
+    for j, polygon_with_hole in enumerate(feature['geometry']['coordinates']):
+
+      # iterate through the polygon_with_hole's polygon_or_hole objects
+      for k, polygon_or_hole in enumerate(polygon_with_hole):
+
+        # iterate through the coordinates of the polygon_or_hole
+        for l, coords in enumerate(polygon_or_hole):
           new_coords = albers_formula(bbox, coords) # coords = [lon, lat]
           new_geojson_data['features'][i]['geometry']['coordinates'][j][k][l] = new_coords
 
@@ -65,6 +70,7 @@ def albers_projection(dir, file_name):
 dir = './data/'
 # file_name = 'angola.geojson'
 # file_name = 'israel.geojson'
-file_name = 'singapore_pa.geojson'
+# file_name = 'singapore_pa.geojson'
+file_name = 'belgium.geojson'
 # file_name = 'world.geojson'
 albers_projection(dir, file_name)
