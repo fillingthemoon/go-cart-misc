@@ -3,7 +3,7 @@ import csv
 
 def gen_file_json_script(input_dir, input_json, input_csv):
 
-  # Area data (CSV)
+  # area_data (CSV)
   area_data = ""
   area_data += ",".join(next(csv.reader(open(input_dir + input_csv)))) + "\n"
 
