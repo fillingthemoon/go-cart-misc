@@ -21,6 +21,6 @@ def gen_file_generator(input_dir, input_json, input_csv):
     json.dump(gen_file_data, new_json_file, indent=2)
 
 input_dir = './input/'
-input_json = 'singapore_re.json'
-input_csv = 'singapore_re.csv'
+input_json = 'belgium.json'
+input_csv = 'belgium.csv'
 gen_file_generator(input_dir, input_json, input_csv)
