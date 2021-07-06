@@ -1,10 +1,9 @@
 import json
 import csv
 
-def gen_file_generator(input_dir, input_json, input_csv):
-  json_file = open(input_dir + input_json)
-  json_data = json.load(json_file)
+def gen_file_json_script(input_dir, input_json, input_csv):
 
+  # Area data (CSV)
   area_data = ""
   area_data += ",".join(next(csv.reader(open(input_dir + input_csv)))) + "\n"
 
@@ -15,12 +14,16 @@ def gen_file_generator(input_dir, input_json, input_csv):
   gen_file_data = {}
   gen_file_data['area_data'] = area_data
   gen_file_data['key'] = 'random_string'
+
+  # gen_file (JSON)
+  json_file = open(input_dir + input_json)
+  json_data = json.load(json_file)
   gen_file_data['gen_file'] = json.dumps(json_data).replace('"', '\"')
 
   with open('./output/' + input_json, 'w') as new_json_file:
     json.dump(gen_file_data, new_json_file, indent=2)
 
 input_dir = './input/'
-input_json = 'austria.json'
-input_csv = 'austria.csv'
-gen_file_generator(input_dir, input_json, input_csv)
+input_json = 'singapore_re.json'
+input_csv = 'singapore_re.csv'
+gen_file_json_script(input_dir, input_json, input_csv)
