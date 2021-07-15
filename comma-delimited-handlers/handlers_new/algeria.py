@@ -24,52 +24,52 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
     def gen_area_data(self, values):
         return """cartogram_id,Region Data,Region Name,Inset\n
 1,{},Adrar,L\n
-2,{},Ain DeflaL\n
-3,{},Ain TemouchentL\n
-4,{},AlgerL\n
-5,{},AnnabaL\n
-6,{},BatnaL\n
-7,{},BecharL\n
-8,{},BejaiaL\n
-9,{},BiskraL\n
-10,{},BlidaL\n
-11,{},Bordj Bou ArreridjL\n
-12,{},BouiraL\n
-13,{},BoumerdesL\n
-14,{},ChlefL\n
-15,{},ConstantineL\n
-16,{},DjelfaL\n
-17,{},El BayadhL\n
-18,{},El OuedL\n
-19,{},El TarfL\n
-20,{},GhardaiaL\n
-21,{},GuelmaL\n
-22,{},IlliziL\n
-23,{},JijelL\n
-24,{},KhenchelaR\n
-25,{},LaghouatR\n
-26,{},M'SilaR\n
-27,{},MascaraR\n
-28,{},MedeaR\n
-29,{},MilaR\n
-30,{},MostaganemR\n
-31,{},NaamaR\n
-32,{},OranR\n
-33,{},OuarglaR\n
-34,{},Oum el BouaghiR\n
-35,{},RelizaneR\n
-36,{},SaidaR\n
-37,{},SetifR\n
-38,{},Sidi Bel AbbesR\n
-39,{},SkikdaR\n
-40,{},Souk AhrasR\n
-41,{},TamanghassetR\n
-42,{},TebessaR\n
-43,{},TiaretR\n
-44,{},TindoufR\n
-45,{},TipazaR\n
-46,{},TissemsiltR\n
-47,{},Tizi OuzouR\n
+2,{},Ain Defla,L\n
+3,{},Ain Temouchent,L\n
+4,{},Alger,L\n
+5,{},Annaba,L\n
+6,{},Batna,L\n
+7,{},Bechar,L\n
+8,{},Bejaia,L\n
+9,{},Biskra,L\n
+10,{},Blida,L\n
+11,{},Bordj Bou Arreridj,L\n
+12,{},Bouira,L\n
+13,{},Boumerdes,L\n
+14,{},Chlef,L\n
+15,{},Constantine,L\n
+16,{},Djelfa,L\n
+17,{},El Bayadh,L\n
+18,{},El Oued,L\n
+19,{},El Tarf,L\n
+20,{},Ghardaia,L\n
+21,{},Guelma,L\n
+22,{},Illizi,L\n
+23,{},Jijel,L\n
+24,{},Khenchela,R\n
+25,{},Laghouat,R\n
+26,{},M'Sila,R\n
+27,{},Mascara,R\n
+28,{},Medea,R\n
+29,{},Mila,R\n
+30,{},Mostaganem,R\n
+31,{},Naama,R\n
+32,{},Oran,R\n
+33,{},Ouargla,R\n
+34,{},Oum el Bouaghi,R\n
+35,{},Relizane,R\n
+36,{},Saida,R\n
+37,{},Setif,R\n
+38,{},Sidi Bel Abbes,R\n
+39,{},Skikda,R\n
+40,{},Souk Ahras,R\n
+41,{},Tamanghasset,R\n
+42,{},Tebessa,R\n
+43,{},Tiaret,R\n
+44,{},Tindouf,R\n
+45,{},Tipaza,R\n
+46,{},Tissemsilt,R\n
+47,{},Tizi Ouzou,R\n
 48,{},Tlemcen,R\n""".format(*values)
     
     def expect_geojson_output(self):
