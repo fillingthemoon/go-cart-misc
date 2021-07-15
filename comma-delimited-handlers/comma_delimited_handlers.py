@@ -26,10 +26,10 @@ def comma_delimited_handlers():
         for line in f_in:
 
           # First line of CSV
-          if re.search("\s*return \"\"\"\d* {} [\w\s]*", line):
+          if re.search("\s*return \"\"\"\d* {} [\w\s'-]*", line):
             new_return_line = "        return \"\"\"cartogram_id,Region Data,Region Name,Inset\\n"
             
-            first_row = re.search("(\d* {} [\w\s]*)", line).group(1)
+            first_row = re.search("(\d* {} [\w\s'-]*)", line).group(1)
             first_row_with_commas = first_row.replace(" {} ", ",{},")
             first_row_with_commas_n = first_row_with_commas.replace("\n", ",L\\n\n")
 
@@ -38,7 +38,7 @@ def comma_delimited_handlers():
             csv_line += 1
 
           # Last line of CSV
-          elif re.search("\d* {} [\w\s]*\"\"\"", line):
+          elif re.search("\d* {} [\w\s'-]*\"\"\"", line):
             last_line_with_commas = line.replace(" {} ", ",{},")
             last_line_with_commas_n = last_line_with_commas.replace("\"\"\"", ",R\\n\"\"\"")
             f_out.write(last_line_with_commas_n)
@@ -46,7 +46,7 @@ def comma_delimited_handlers():
             csv_line += 1
 
           # The rest of the lines of the CSV
-          elif re.search("\d* {} [\w\s]*", line):
+          elif re.search("\d* {} [\w\s'-]*", line):
             line_with_commas = line.replace(" {} ", ",{},")
             
             if csv_line < num_csv_lines / 2: 
