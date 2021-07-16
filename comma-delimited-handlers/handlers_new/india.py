@@ -22,42 +22,42 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Andaman and Nicobar Islands AN,L\n
-2,{},Andhra Pradesh AP,L\n
-3,{},Arunachal Pradesh AR,L\n
-4,{},Assam AS,L\n
-5,{},Bihar BR,L\n
-6,{},Chandigarh CH,L\n
-7,{},Chhattisgarh CT,L\n
-8,{},Dadra and Nagar Haveli DN,L\n
-9,{},Daman and Diu DD,L\n
-10,{},Delhi DL,L\n
-11,{},Goa GA,L\n
-12,{},Gujarat GJ,L\n
-13,{},Haryana HR,L\n
-14,{},Himachal Pradesh HP,L\n
-15,{},Jammu and Kashmir JK,L\n
-16,{},Jharkhand JH,L\n
-17,{},Karnataka KA,L\n
-18,{},Kerala KL,R\n
-20,{},Madhya Pradesh MP,R\n
-21,{},Maharashtra MH,R\n
-22,{},Manipur MN,R\n
-23,{},Meghalaya ML,R\n
-24,{},Mizoram MZ,R\n
-25,{},Nagaland NL,R\n
-26,{},Odisha OD,R\n
-27,{},Puducherry PY,R\n
-28,{},Punjab PB,R\n
-29,{},Rajasthan RJ,R\n
-30,{},Sikkim SK,R\n
-31,{},Tamil Nadu TN,R\n
-32,{},Telangana TG,R\n
-33,{},Tripura TR,R\n
-34,{},Uttar Pradesh UP,R\n
-35,{},Uttarakhand UK,R\n
-36,{},West Bengal WB,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Andaman and Nicobar Islands AN,L
+2,{},Andhra Pradesh AP,L
+3,{},Arunachal Pradesh AR,L
+4,{},Assam AS,L
+5,{},Bihar BR,L
+6,{},Chandigarh CH,L
+7,{},Chhattisgarh CT,L
+8,{},Dadra and Nagar Haveli DN,L
+9,{},Daman and Diu DD,L
+10,{},Delhi DL,L
+11,{},Goa GA,L
+12,{},Gujarat GJ,L
+13,{},Haryana HR,L
+14,{},Himachal Pradesh HP,L
+15,{},Jammu and Kashmir JK,L
+16,{},Jharkhand JH,L
+17,{},Karnataka KA,L
+18,{},Kerala KL,R
+20,{},Madhya Pradesh MP,R
+21,{},Maharashtra MH,R
+22,{},Manipur MN,R
+23,{},Meghalaya ML,R
+24,{},Mizoram MZ,R
+25,{},Nagaland NL,R
+26,{},Odisha OD,R
+27,{},Puducherry PY,R
+28,{},Punjab PB,R
+29,{},Rajasthan RJ,R
+30,{},Sikkim SK,R
+31,{},Tamil Nadu TN,R
+32,{},Telangana TG,R
+33,{},Tripura TR,R
+34,{},Uttar Pradesh UP,R
+35,{},Uttarakhand UK,R
+36,{},West Bengal WB,R""".format(*values)
 
     def csv_to_area_string_and_colors(self, csvfile):
 

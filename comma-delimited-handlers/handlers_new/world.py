@@ -22,249 +22,249 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Afghanistan,L\n
-2,{},Aland,L\n
-3,{},Albania,L\n
-4,{},Algeria,L\n
-5,{},American Samoa,L\n
-6,{},Andorra,L\n
-7,{},Angola,L\n
-8,{},Anguilla,L\n
-9,{},Antarctica,L\n
-10,{},Antigua and Barb.,L\n
-11,{},Argentina,L\n
-12,{},Armenia,L\n
-13,{},Aruba,L\n
-14,{},Australia,L\n
-15,{},Austria,L\n
-16,{},Azerbaijan,L\n
-17,{},Bahamas,L\n
-18,{},Bahrain,L\n
-19,{},Bangladesh,L\n
-20,{},Barbados,L\n
-21,{},Belarus,L\n
-22,{},Belgium,L\n
-23,{},Belize,L\n
-24,{},Benin,L\n
-25,{},Bermuda,L\n
-26,{},Bhutan,L\n
-27,{},Bolivia,L\n
-28,{},Bosnia and Herz.,L\n
-29,{},Botswana,L\n
-30,{},Br. Indian Ocean Ter.,L\n
-31,{},Brazil,L\n
-32,{},British Virgin Is.,L\n
-33,{},Brunei,L\n
-34,{},Bulgaria,L\n
-35,{},Burkina Faso,L\n
-36,{},Burundi,L\n
-37,{},Cabo Verde,L\n
-38,{},Cambodia,L\n
-39,{},Cameroon,L\n
-40,{},Canada,L\n
-41,{},Cayman Is.,L\n
-42,{},Central African Rep.,L\n
-43,{},Chad,L\n
-44,{},Chile,L\n
-45,{},China,L\n
-46,{},Colombia,L\n
-47,{},Comoros,L\n
-48,{},Congo,L\n
-49,{},Cook Is.,L\n
-50,{},Costa Rica,L\n
-51,{},Cote d'Ivoire,L\n
-52,{},Croatia,L\n
-53,{},Cuba,L\n
-54,{},Curacao,L\n
-55,{},Cyprus,L\n
-56,{},Czechia,L\n
-57,{},Dem. Rep. Congo,L\n
-58,{},Denmark,L\n
-59,{},Djibouti,L\n
-60,{},Dominica,L\n
-61,{},Dominican Rep.,L\n
-62,{},Ecuador,L\n
-63,{},Egypt,L\n
-64,{},El Salvador,L\n
-65,{},Eq. Guinea,L\n
-66,{},Eritrea,L\n
-67,{},Estonia,L\n
-68,{},eSwatini,L\n
-69,{},Ethiopia,L\n
-70,{},Faeroe Is.,L\n
-71,{},Falkland Is.,L\n
-72,{},Fiji,L\n
-73,{},Finland,L\n
-74,{},Fr. Polynesia,L\n
-75,{},Fr. S. Antarctic Lands,L\n
-76,{},France,L\n
-77,{},Gabon,L\n
-78,{},Gambia,L\n
-79,{},Georgia,L\n
-80,{},Germany,L\n
-81,{},Ghana,L\n
-82,{},Gibraltar,L\n
-83,{},Greece,L\n
-84,{},Greenland,L\n
-85,{},Grenada,L\n
-86,{},Guam,L\n
-87,{},Guatemala,L\n
-88,{},Guernsey,L\n
-89,{},Guinea,L\n
-90,{},Guinea-Bissau,L\n
-91,{},Guyana,L\n
-92,{},Haiti,L\n
-93,{},Heard I. and McDonald Is.,L\n
-94,{},Honduras,L\n
-95,{},Hong Kong,L\n
-96,{},Hungary,L\n
-97,{},Iceland,L\n
-98,{},India,L\n
-99,{},Indonesia,L\n
-100,{},Iran,L\n
-101,{},Iraq,L\n
-102,{},Ireland,L\n
-103,{},Isle of Man,L\n
-104,{},Israel,L\n
-105,{},Italy,L\n
-106,{},Jamaica,L\n
-107,{},Japan,L\n
-108,{},Jersey,L\n
-109,{},Jordan,L\n
-110,{},Kazakhstan,L\n
-111,{},Kenya,L\n
-112,{},Kiribati,L\n
-113,{},Kosovo,L\n
-114,{},Kuwait,L\n
-115,{},Kyrgyzstan,L\n
-116,{},Laos,L\n
-117,{},Latvia,L\n
-118,{},Lebanon,L\n
-119,{},Lesotho,L\n
-120,{},Liberia,L\n
-121,{},Libya,R\n
-122,{},Liechtenstein,R\n
-123,{},Lithuania,R\n
-124,{},Luxembourg,R\n
-125,{},Macao,R\n
-126,{},Macedonia,R\n
-127,{},Madagascar,R\n
-128,{},Malawi,R\n
-129,{},Malaysia,R\n
-130,{},Maldives,R\n
-131,{},Mali,R\n
-132,{},Malta,R\n
-133,{},Marshall Is.,R\n
-134,{},Mauritania,R\n
-135,{},Mauritius,R\n
-136,{},Mexico,R\n
-137,{},Micronesia,R\n
-138,{},Moldova,R\n
-139,{},Monaco,R\n
-140,{},Mongolia,R\n
-141,{},Montenegro,R\n
-142,{},Montserrat,R\n
-143,{},Morocco,R\n
-144,{},Mozambique,R\n
-145,{},Myanmar,R\n
-146,{},N. Cyprus,R\n
-147,{},N. Mariana Is.,R\n
-148,{},Namibia,R\n
-149,{},Nauru,R\n
-150,{},Nepal,R\n
-151,{},Netherlands,R\n
-152,{},New Caledonia,R\n
-153,{},New Zealand,R\n
-154,{},Nicaragua,R\n
-155,{},Niger,R\n
-156,{},Nigeria,R\n
-157,{},Niue,R\n
-158,{},Norfolk Island,R\n
-159,{},North Korea,R\n
-160,{},Norway,R\n
-161,{},Oman,R\n
-162,{},Pakistan,R\n
-163,{},Palau,R\n
-164,{},Palestine,R\n
-165,{},Panama,R\n
-166,{},Papua New Guinea,R\n
-167,{},Paraguay,R\n
-168,{},Peru,R\n
-169,{},Philippines,R\n
-170,{},Pitcairn Is.,R\n
-171,{},Poland,R\n
-172,{},Portugal,R\n
-173,{},Puerto Rico,R\n
-174,{},Qatar,R\n
-175,{},Romania,R\n
-176,{},Russia,R\n
-177,{},Rwanda,R\n
-178,{},S. Geo. and the Is.,R\n
-179,{},S. Sudan,R\n
-180,{},Saint Helena,R\n
-181,{},Saint Lucia,R\n
-182,{},Samoa,R\n
-183,{},San Marino,R\n
-184,{},Sao Tome and Principe,R\n
-185,{},Saudi Arabia,R\n
-186,{},Senegal,R\n
-187,{},Serbia,R\n
-188,{},Seychelles,R\n
-189,{},Siachen Glacier,R\n
-190,{},Sierra Leone,R\n
-191,{},Singapore,R\n
-192,{},Sint Maarten,R\n
-193,{},Slovakia,R\n
-194,{},Slovenia,R\n
-195,{},Solomon Is.,R\n
-196,{},Somalia,R\n
-197,{},Somaliland,R\n
-198,{},South Africa,R\n
-199,{},South Korea,R\n
-200,{},Spain,R\n
-201,{},Sri Lanka,R\n
-202,{},St-Barthelemy,R\n
-203,{},St-Martin,R\n
-204,{},St. Kitts and Nevis,R\n
-205,{},St. Pierre and Miquelon,R\n
-206,{},St. Vin. and Gren.,R\n
-207,{},Sudan,R\n
-208,{},Suriname,R\n
-209,{},Sweden,R\n
-210,{},Switzerland,R\n
-211,{},Syria,R\n
-212,{},Taiwan,R\n
-213,{},Tajikistan,R\n
-214,{},Tanzania,R\n
-215,{},Thailand,R\n
-216,{},Timor-Leste,R\n
-217,{},Togo,R\n
-218,{},Tonga,R\n
-219,{},Trinidad and Tobago,R\n
-220,{},Tunisia,R\n
-221,{},Turkey,R\n
-222,{},Turkmenistan,R\n
-223,{},Turks and Caicos Is.,R\n
-224,{},Tuvalu,R\n
-225,{},U.S. Minor Outlying Is.,R\n
-226,{},U.S. Virgin Is.,R\n
-227,{},Uganda,R\n
-228,{},Ukraine,R\n
-229,{},United Arab Emirates,R\n
-230,{},United Kingdom,R\n
-231,{},United States of America,R\n
-232,{},Uruguay,R\n
-233,{},Uzbekistan,R\n
-234,{},Vanuatu,R\n
-235,{},Vatican,R\n
-236,{},Venezuela,R\n
-237,{},Vietnam,R\n
-238,{},W. Sahara,R\n
-239,{},Wallis and Futuna Is.,R\n
-240,{},Yemen,R\n
-241,{},Zambia,R\n
-242,{},Zimbabwe,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Afghanistan,L
+2,{},Aland,L
+3,{},Albania,L
+4,{},Algeria,L
+5,{},American Samoa,L
+6,{},Andorra,L
+7,{},Angola,L
+8,{},Anguilla,L
+9,{},Antarctica,L
+10,{},Antigua and Barb.,L
+11,{},Argentina,L
+12,{},Armenia,L
+13,{},Aruba,L
+14,{},Australia,L
+15,{},Austria,L
+16,{},Azerbaijan,L
+17,{},Bahamas,L
+18,{},Bahrain,L
+19,{},Bangladesh,L
+20,{},Barbados,L
+21,{},Belarus,L
+22,{},Belgium,L
+23,{},Belize,L
+24,{},Benin,L
+25,{},Bermuda,L
+26,{},Bhutan,L
+27,{},Bolivia,L
+28,{},Bosnia and Herz.,L
+29,{},Botswana,L
+30,{},Br. Indian Ocean Ter.,L
+31,{},Brazil,L
+32,{},British Virgin Is.,L
+33,{},Brunei,L
+34,{},Bulgaria,L
+35,{},Burkina Faso,L
+36,{},Burundi,L
+37,{},Cabo Verde,L
+38,{},Cambodia,L
+39,{},Cameroon,L
+40,{},Canada,L
+41,{},Cayman Is.,L
+42,{},Central African Rep.,L
+43,{},Chad,L
+44,{},Chile,L
+45,{},China,L
+46,{},Colombia,L
+47,{},Comoros,L
+48,{},Congo,L
+49,{},Cook Is.,L
+50,{},Costa Rica,L
+51,{},Cote d'Ivoire,L
+52,{},Croatia,L
+53,{},Cuba,L
+54,{},Curacao,L
+55,{},Cyprus,L
+56,{},Czechia,L
+57,{},Dem. Rep. Congo,L
+58,{},Denmark,L
+59,{},Djibouti,L
+60,{},Dominica,L
+61,{},Dominican Rep.,L
+62,{},Ecuador,L
+63,{},Egypt,L
+64,{},El Salvador,L
+65,{},Eq. Guinea,L
+66,{},Eritrea,L
+67,{},Estonia,L
+68,{},eSwatini,L
+69,{},Ethiopia,L
+70,{},Faeroe Is.,L
+71,{},Falkland Is.,L
+72,{},Fiji,L
+73,{},Finland,L
+74,{},Fr. Polynesia,L
+75,{},Fr. S. Antarctic Lands,L
+76,{},France,L
+77,{},Gabon,L
+78,{},Gambia,L
+79,{},Georgia,L
+80,{},Germany,L
+81,{},Ghana,L
+82,{},Gibraltar,L
+83,{},Greece,L
+84,{},Greenland,L
+85,{},Grenada,L
+86,{},Guam,L
+87,{},Guatemala,L
+88,{},Guernsey,L
+89,{},Guinea,L
+90,{},Guinea-Bissau,L
+91,{},Guyana,L
+92,{},Haiti,L
+93,{},Heard I. and McDonald Is.,L
+94,{},Honduras,L
+95,{},Hong Kong,L
+96,{},Hungary,L
+97,{},Iceland,L
+98,{},India,L
+99,{},Indonesia,L
+100,{},Iran,L
+101,{},Iraq,L
+102,{},Ireland,L
+103,{},Isle of Man,L
+104,{},Israel,L
+105,{},Italy,L
+106,{},Jamaica,L
+107,{},Japan,L
+108,{},Jersey,L
+109,{},Jordan,L
+110,{},Kazakhstan,L
+111,{},Kenya,L
+112,{},Kiribati,L
+113,{},Kosovo,L
+114,{},Kuwait,L
+115,{},Kyrgyzstan,L
+116,{},Laos,L
+117,{},Latvia,L
+118,{},Lebanon,L
+119,{},Lesotho,L
+120,{},Liberia,L
+121,{},Libya,R
+122,{},Liechtenstein,R
+123,{},Lithuania,R
+124,{},Luxembourg,R
+125,{},Macao,R
+126,{},Macedonia,R
+127,{},Madagascar,R
+128,{},Malawi,R
+129,{},Malaysia,R
+130,{},Maldives,R
+131,{},Mali,R
+132,{},Malta,R
+133,{},Marshall Is.,R
+134,{},Mauritania,R
+135,{},Mauritius,R
+136,{},Mexico,R
+137,{},Micronesia,R
+138,{},Moldova,R
+139,{},Monaco,R
+140,{},Mongolia,R
+141,{},Montenegro,R
+142,{},Montserrat,R
+143,{},Morocco,R
+144,{},Mozambique,R
+145,{},Myanmar,R
+146,{},N. Cyprus,R
+147,{},N. Mariana Is.,R
+148,{},Namibia,R
+149,{},Nauru,R
+150,{},Nepal,R
+151,{},Netherlands,R
+152,{},New Caledonia,R
+153,{},New Zealand,R
+154,{},Nicaragua,R
+155,{},Niger,R
+156,{},Nigeria,R
+157,{},Niue,R
+158,{},Norfolk Island,R
+159,{},North Korea,R
+160,{},Norway,R
+161,{},Oman,R
+162,{},Pakistan,R
+163,{},Palau,R
+164,{},Palestine,R
+165,{},Panama,R
+166,{},Papua New Guinea,R
+167,{},Paraguay,R
+168,{},Peru,R
+169,{},Philippines,R
+170,{},Pitcairn Is.,R
+171,{},Poland,R
+172,{},Portugal,R
+173,{},Puerto Rico,R
+174,{},Qatar,R
+175,{},Romania,R
+176,{},Russia,R
+177,{},Rwanda,R
+178,{},S. Geo. and the Is.,R
+179,{},S. Sudan,R
+180,{},Saint Helena,R
+181,{},Saint Lucia,R
+182,{},Samoa,R
+183,{},San Marino,R
+184,{},Sao Tome and Principe,R
+185,{},Saudi Arabia,R
+186,{},Senegal,R
+187,{},Serbia,R
+188,{},Seychelles,R
+189,{},Siachen Glacier,R
+190,{},Sierra Leone,R
+191,{},Singapore,R
+192,{},Sint Maarten,R
+193,{},Slovakia,R
+194,{},Slovenia,R
+195,{},Solomon Is.,R
+196,{},Somalia,R
+197,{},Somaliland,R
+198,{},South Africa,R
+199,{},South Korea,R
+200,{},Spain,R
+201,{},Sri Lanka,R
+202,{},St-Barthelemy,R
+203,{},St-Martin,R
+204,{},St. Kitts and Nevis,R
+205,{},St. Pierre and Miquelon,R
+206,{},St. Vin. and Gren.,R
+207,{},Sudan,R
+208,{},Suriname,R
+209,{},Sweden,R
+210,{},Switzerland,R
+211,{},Syria,R
+212,{},Taiwan,R
+213,{},Tajikistan,R
+214,{},Tanzania,R
+215,{},Thailand,R
+216,{},Timor-Leste,R
+217,{},Togo,R
+218,{},Tonga,R
+219,{},Trinidad and Tobago,R
+220,{},Tunisia,R
+221,{},Turkey,R
+222,{},Turkmenistan,R
+223,{},Turks and Caicos Is.,R
+224,{},Tuvalu,R
+225,{},U.S. Minor Outlying Is.,R
+226,{},U.S. Virgin Is.,R
+227,{},Uganda,R
+228,{},Ukraine,R
+229,{},United Arab Emirates,R
+230,{},United Kingdom,R
+231,{},United States of America,R
+232,{},Uruguay,R
+233,{},Uzbekistan,R
+234,{},Vanuatu,R
+235,{},Vatican,R
+236,{},Venezuela,R
+237,{},Vietnam,R
+238,{},W. Sahara,R
+239,{},Wallis and Futuna Is.,R
+240,{},Yemen,R
+241,{},Zambia,R
+242,{},Zimbabwe,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

@@ -22,23 +22,23 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Hamburg HH,L\n
-2,{},Niedersachsen NI,L\n
-3,{},Bremen HB,L\n
-4,{},Nordrhein-Westfalen NW,L\n
-5,{},Hessen HE,L\n
-6,{},Rheinland-Pfalz RP,L\n
-7,{},Baden-Wuerttemberg BW,L\n
-8,{},Bayern BY,R\n
-9,{},Saarland SL,R\n
-10,{},Berlin BE,R\n
-11,{},Brandenburg BB,R\n
-12,{},Mecklenburg-Vorpommern MV,R\n
-13,{},Sachsen SN,R\n
-14,{},Sachsen-Anhalt ST,R\n
-15,{},Thueringen TH,R\n
-16,{},Schleswig-Holstein SH,R\n
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Hamburg HH,L
+2,{},Niedersachsen NI,L
+3,{},Bremen HB,L
+4,{},Nordrhein-Westfalen NW,L
+5,{},Hessen HE,L
+6,{},Rheinland-Pfalz RP,L
+7,{},Baden-Wuerttemberg BW,L
+8,{},Bayern BY,R
+9,{},Saarland SL,R
+10,{},Berlin BE,R
+11,{},Brandenburg BB,R
+12,{},Mecklenburg-Vorpommern MV,R
+13,{},Sachsen SN,R
+14,{},Sachsen-Anhalt ST,R
+15,{},Thueringen TH,R
+16,{},Schleswig-Holstein SH,R
 """.format(*values)
 
     def csv_to_area_string_and_colors(self, csvfile):

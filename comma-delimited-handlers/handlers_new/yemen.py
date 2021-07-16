@@ -22,29 +22,29 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Aden,L\n
-2,{},Abyan,L\n
-3,{},Al Bayda',L\n
-4,{},Ad Dali,L\n
-5,{},Al Hudaydah,L\n
-6,{},Al Jawf,L\n
-7,{},Al Mahrah,L\n
-8,{},Al Mahwit,L\n
-9,{},Amanat Al Asimah,L\n
-10,{},'Amran,L\n
-11,{},Dhamar,R\n
-12,{},Hadramawt,R\n
-13,{},Hajjah,R\n
-14,{},Ibb,R\n
-15,{},Lahij,R\n
-16,{},Ma'rib,R\n
-17,{},Raymah,R\n
-18,{},Sa'dah,R\n
-19,{},Sana'a,R\n
-20,{},Shabwah,R\n
-21,{},Socotra,R\n
-22,{},Ta'izz,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Aden,L
+2,{},Abyan,L
+3,{},Al Bayda',L
+4,{},Ad Dali,L
+5,{},Al Hudaydah,L
+6,{},Al Jawf,L
+7,{},Al Mahrah,L
+8,{},Al Mahwit,L
+9,{},Amanat Al Asimah,L
+10,{},'Amran,L
+11,{},Dhamar,R
+12,{},Hadramawt,R
+13,{},Hajjah,R
+14,{},Ibb,R
+15,{},Lahij,R
+16,{},Ma'rib,R
+17,{},Raymah,R
+18,{},Sa'dah,R
+19,{},Sana'a,R
+20,{},Shabwah,R
+21,{},Socotra,R
+22,{},Ta'izz,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

@@ -22,25 +22,25 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Al Jazirah,L\n
-2,{},Al Qadarif,L\n
-3,{},Blue Nile,L\n
-4,{},Central Darfur,L\n
-5,{},East Darfur,L\n
-6,{},Kassala,L\n
-7,{},Khartoum,L\n
-8,{},North Darfur,L\n
-9,{},North Kurdufan,R\n
-10,{},Northern,R\n
-11,{},Red Sea,R\n
-12,{},River Nile,R\n
-13,{},Sennar,R\n
-14,{},South Darfur,R\n
-15,{},South Kurdufan,R\n
-16,{},West Darfur,R\n
-17,{},West Kurdufan,R\n
-18,{},White Nile,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Al Jazirah,L
+2,{},Al Qadarif,L
+3,{},Blue Nile,L
+4,{},Central Darfur,L
+5,{},East Darfur,L
+6,{},Kassala,L
+7,{},Khartoum,L
+8,{},North Darfur,L
+9,{},North Kurdufan,R
+10,{},Northern,R
+11,{},Red Sea,R
+12,{},River Nile,R
+13,{},Sennar,R
+14,{},South Darfur,R
+15,{},South Kurdufan,R
+16,{},West Darfur,R
+17,{},West Kurdufan,R
+18,{},White Nile,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

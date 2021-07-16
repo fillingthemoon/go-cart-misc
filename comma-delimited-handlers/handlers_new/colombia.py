@@ -22,39 +22,39 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Amazonas,L\n
-2,{},Antioquia,L\n
-3,{},Arauca,L\n
-4,{},Atlantico,L\n
-5,{},Bolivar,L\n
-6,{},Boyaca,L\n
-7,{},Caldas,L\n
-8,{},Caqueta,L\n
-9,{},Casanare,L\n
-10,{},Cauca,L\n
-11,{},Cesar,L\n
-12,{},Choco,L\n
-13,{},Cordoba,L\n
-14,{},Cundinamarca,L\n
-15,{},Guainia,L\n
-16,{},Guaviare,R\n
-17,{},Huila,R\n
-18,{},La Guajira,R\n
-19,{},Magdalena,R\n
-20,{},Meta,R\n
-21,{},Narino,R\n
-22,{},Norte de Santander,R\n
-23,{},Putumayo,R\n
-24,{},Quindio,R\n
-25,{},Risaralda,R\n
-26,{},San Andres y Providencia  ,R\n
-27,{},Santander,R\n
-28,{},Sucre,R\n
-29,{},Tolima,R\n
-30,{},Valle del Cauca,R\n
-31,{},Vaupes,R\n
-32,{},Vichada,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Amazonas,L
+2,{},Antioquia,L
+3,{},Arauca,L
+4,{},Atlantico,L
+5,{},Bolivar,L
+6,{},Boyaca,L
+7,{},Caldas,L
+8,{},Caqueta,L
+9,{},Casanare,L
+10,{},Cauca,L
+11,{},Cesar,L
+12,{},Choco,L
+13,{},Cordoba,L
+14,{},Cundinamarca,L
+15,{},Guainia,L
+16,{},Guaviare,R
+17,{},Huila,R
+18,{},La Guajira,R
+19,{},Magdalena,R
+20,{},Meta,R
+21,{},Narino,R
+22,{},Norte de Santander,R
+23,{},Putumayo,R
+24,{},Quindio,R
+25,{},Risaralda,R
+26,{},San Andres y Providencia  ,R
+27,{},Santander,R
+28,{},Sucre,R
+29,{},Tolima,R
+30,{},Valle del Cauca,R
+31,{},Vaupes,R
+32,{},Vichada,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

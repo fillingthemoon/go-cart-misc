@@ -22,40 +22,40 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Aceh,L\n
-2,{},Bali,L\n
-3,{},Bangka Belitung,L\n
-4,{},Banten,L\n
-5,{},Bengkulu,L\n
-6,{},Gorontalo,L\n
-7,{},Jakarta Raya,L\n
-8,{},Jambi,L\n
-9,{},Jawa Barat,L\n
-10,{},Jawa Tengah,L\n
-11,{},Jawa Timur,L\n
-12,{},Kalimantan Barat,L\n
-13,{},Kalimantan Selatan,L\n
-14,{},Kalimantan Tengah,L\n
-15,{},Kalimantan Timur,L\n
-16,{},Kepulauan Riau,L\n
-17,{},Lampung,R\n
-18,{},Maluku,R\n
-19,{},Maluku Utara,R\n
-20,{},Nusa Tenggara Barat,R\n
-21,{},Nusa Tenggara Timur,R\n
-22,{},Papua,R\n
-23,{},Papua Barat,R\n
-24,{},Riau,R\n
-25,{},Sulawesi Barat,R\n
-26,{},Sulawesi Selatan,R\n
-27,{},Sulawesi Tengah,R\n
-28,{},Sulawesi Tenggara,R\n
-29,{},Sulawesi Utara,R\n
-30,{},Sumatera Barat,R\n
-31,{},Sumatera Selatan,R\n
-32,{},Sumatera Utara,R\n
-33,{},Yogyakarta,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Aceh,L
+2,{},Bali,L
+3,{},Bangka Belitung,L
+4,{},Banten,L
+5,{},Bengkulu,L
+6,{},Gorontalo,L
+7,{},Jakarta Raya,L
+8,{},Jambi,L
+9,{},Jawa Barat,L
+10,{},Jawa Tengah,L
+11,{},Jawa Timur,L
+12,{},Kalimantan Barat,L
+13,{},Kalimantan Selatan,L
+14,{},Kalimantan Tengah,L
+15,{},Kalimantan Timur,L
+16,{},Kepulauan Riau,L
+17,{},Lampung,R
+18,{},Maluku,R
+19,{},Maluku Utara,R
+20,{},Nusa Tenggara Barat,R
+21,{},Nusa Tenggara Timur,R
+22,{},Papua,R
+23,{},Papua Barat,R
+24,{},Riau,R
+25,{},Sulawesi Barat,R
+26,{},Sulawesi Selatan,R
+27,{},Sulawesi Tengah,R
+28,{},Sulawesi Tenggara,R
+29,{},Sulawesi Utara,R
+30,{},Sumatera Barat,R
+31,{},Sumatera Selatan,R
+32,{},Sumatera Utara,R
+33,{},Yogyakarta,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

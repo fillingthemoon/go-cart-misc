@@ -22,14 +22,14 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Brest,L\n
-2,{},Gomel,L\n
-3,{},Grodno,L\n
-4,{},Mogilev,R\n
-5,{},Minsk,R\n
-6,{},Minsk City,R\n
-7,{},Vitebsk,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Brest,L
+2,{},Gomel,L
+3,{},Grodno,L
+4,{},Mogilev,R
+5,{},Minsk,R
+6,{},Minsk City,R
+7,{},Vitebsk,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

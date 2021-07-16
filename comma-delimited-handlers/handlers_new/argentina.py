@@ -22,31 +22,31 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Buenos Aires,L\n
-2,{},Catamarca,L\n
-3,{},Chaco,L\n
-4,{},Chubut,L\n
-5,{},Ciudad de Buenos Aires,L\n
-6,{},Cordoba,L\n
-7,{},Corrientes,L\n
-8,{},Entre Rios,L\n
-9,{},Formosa,L\n
-10,{},Jujuy,L\n
-11,{},La Pampa,L\n
-12,{},La Rioja,R\n
-13,{},Mendoza,R\n
-14,{},Misiones,R\n
-15,{},Neuquen,R\n
-16,{},Rio Negro,R\n
-17,{},Salta,R\n
-18,{},San Juan,R\n
-19,{},San Luis,R\n
-20,{},Santa Cruz,R\n
-21,{},Santa Fe,R\n
-22,{},Santiago del Estero,R\n
-23,{},Tierra del Fuego,R\n
-24,{},Tucuman,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Buenos Aires,L
+2,{},Catamarca,L
+3,{},Chaco,L
+4,{},Chubut,L
+5,{},Ciudad de Buenos Aires,L
+6,{},Cordoba,L
+7,{},Corrientes,L
+8,{},Entre Rios,L
+9,{},Formosa,L
+10,{},Jujuy,L
+11,{},La Pampa,L
+12,{},La Rioja,R
+13,{},Mendoza,R
+14,{},Misiones,R
+15,{},Neuquen,R
+16,{},Rio Negro,R
+17,{},Salta,R
+18,{},San Juan,R
+19,{},San Luis,R
+20,{},Santa Cruz,R
+21,{},Santa Fe,R
+22,{},Santiago del Estero,R
+23,{},Tierra del Fuego,R
+24,{},Tucuman,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

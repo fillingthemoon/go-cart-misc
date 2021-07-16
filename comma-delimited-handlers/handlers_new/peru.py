@@ -22,33 +22,33 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Amazonas,L\n
-2,{},Ancash,L\n
-3,{},Apurimac,L\n
-4,{},Arequipa,L\n
-5,{},Ayacucho,L\n
-6,{},Cajamarca,L\n
-7,{},Callao,L\n
-8,{},Cusco,L\n
-9,{},Huancavelica,L\n
-10,{},Huanuco,L\n
-11,{},Ica,L\n
-12,{},Junin,L\n
-13,{},La Libertad,R\n
-14,{},Lambayeque,R\n
-15,{},Lima,R\n
-16,{},Lima Province,R\n
-17,{},Loreto,R\n
-18,{},Madre de Dios,R\n
-19,{},Moquegua,R\n
-20,{},Pasco,R\n
-21,{},Piura,R\n
-22,{},Puno,R\n
-23,{},San Martin,R\n
-24,{},Tacna,R\n
-25,{},Tumbes,R\n
-26,{},Ucayali,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Amazonas,L
+2,{},Ancash,L
+3,{},Apurimac,L
+4,{},Arequipa,L
+5,{},Ayacucho,L
+6,{},Cajamarca,L
+7,{},Callao,L
+8,{},Cusco,L
+9,{},Huancavelica,L
+10,{},Huanuco,L
+11,{},Ica,L
+12,{},Junin,L
+13,{},La Libertad,R
+14,{},Lambayeque,R
+15,{},Lima,R
+16,{},Lima Province,R
+17,{},Loreto,R
+18,{},Madre de Dios,R
+19,{},Moquegua,R
+20,{},Pasco,R
+21,{},Piura,R
+22,{},Puno,R
+23,{},San Martin,R
+24,{},Tacna,R
+25,{},Tumbes,R
+26,{},Ucayali,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

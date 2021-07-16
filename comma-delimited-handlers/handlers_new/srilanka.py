@@ -22,32 +22,32 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Ampara,L\n
-2,{},Anuradhapura,L\n
-3,{},Badulla,L\n
-4,{},Batticaloa,L\n
-5,{},Colombo,L\n
-6,{},Galle,L\n
-7,{},Gampaha,L\n
-8,{},Hambantota,L\n
-9,{},Jaffna,L\n
-10,{},Kalutara,L\n
-11,{},Kandy,L\n
-12,{},Kegalle,L\n
-13,{},Kilinochchi,R\n
-14,{},Kurunegala,R\n
-15,{},Mannar,R\n
-16,{},Matale,R\n
-17,{},Matara,R\n
-18,{},Moneragala,R\n
-19,{},Mullaitivu,R\n
-20,{},Nuwara Eliya,R\n
-21,{},Polonnaruwa,R\n
-22,{},Puttalam,R\n
-23,{},Ratnapura,R\n
-24,{},Trincomalee,R\n
-25,{},Vavuniya,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Ampara,L
+2,{},Anuradhapura,L
+3,{},Badulla,L
+4,{},Batticaloa,L
+5,{},Colombo,L
+6,{},Galle,L
+7,{},Gampaha,L
+8,{},Hambantota,L
+9,{},Jaffna,L
+10,{},Kalutara,L
+11,{},Kandy,L
+12,{},Kegalle,L
+13,{},Kilinochchi,R
+14,{},Kurunegala,R
+15,{},Mannar,R
+16,{},Matale,R
+17,{},Matara,R
+18,{},Moneragala,R
+19,{},Mullaitivu,R
+20,{},Nuwara Eliya,R
+21,{},Polonnaruwa,R
+22,{},Puttalam,R
+23,{},Ratnapura,R
+24,{},Trincomalee,R
+25,{},Vavuniya,R""".format(*values)
     
     def remove_holes(self):
         return True

@@ -22,28 +22,28 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-2,{},Dalarna,L\n
-3,{},Gavleborg,L\n
-4,{},Gotland,L\n
-5,{},Halland,L\n
-6,{},Jamtland,L\n
-7,{},Jonkoping,L\n
-8,{},Kalmar,L\n
-9,{},Kronoberg,L\n
-10,{},Norrbotten,L\n
-11,{},Orebro,L\n
-12,{},Ostergotland,R\n
-1,{},Blekinge,R\n
-14,{},Sodermanland,R\n
-13,{},Skane,R\n
-15,{},Stockholm,R\n
-16,{},Uppsala,R\n
-17,{},Varmland,R\n
-18,{},Vasterbotten,R\n
-19,{},Vasternorrland,R\n
-20,{},Vastmanland,R\n
-21,{},Vastra Gotaland,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+2,{},Dalarna,L
+3,{},Gavleborg,L
+4,{},Gotland,L
+5,{},Halland,L
+6,{},Jamtland,L
+7,{},Jonkoping,L
+8,{},Kalmar,L
+9,{},Kronoberg,L
+10,{},Norrbotten,L
+11,{},Orebro,L
+12,{},Ostergotland,R
+1,{},Blekinge,R
+14,{},Sodermanland,R
+13,{},Skane,R
+15,{},Stockholm,R
+16,{},Uppsala,R
+17,{},Varmland,R
+18,{},Vasterbotten,R
+19,{},Vasternorrland,R
+20,{},Vastmanland,R
+21,{},Vastra Gotaland,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

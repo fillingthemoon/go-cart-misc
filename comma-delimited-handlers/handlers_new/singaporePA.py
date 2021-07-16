@@ -22,62 +22,62 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Ang Mo Kio,L\n
-2,{},Bedok,L\n
-3,{},Bishan,L\n
-4,{},Boon Lay,L\n
-5,{},Bukit Batok,L\n
-6,{},Bukit Merah,L\n
-7,{},Bukit Panjang,L\n
-8,{},Bukit Timah,L\n
-9,{},Central Water Catchment,L\n
-10,{},Changi,L\n
-11,{},Changi Bay,L\n
-12,{},Choa Chu Kang,L\n
-13,{},Clementi,L\n
-14,{},Downtown Core,L\n
-15,{},Geylang,L\n
-16,{},Hougang,L\n
-17,{},Jurong East,L\n
-18,{},Jurong West,L\n
-19,{},Kallang,L\n
-20,{},Lim Chu Kang,L\n
-21,{},Mandai,L\n
-22,{},Marina East,L\n
-23,{},Marina South,L\n
-24,{},Marine Parade,L\n
-25,{},Museum,L\n
-26,{},Newton,L\n
-27,{},North-eastern Islands,L\n
-28,{},Novena,R\n
-29,{},Orchard,R\n
-30,{},Outram,R\n
-31,{},Pasir Ris,R\n
-32,{},Paya Lebar,R\n
-33,{},Pioneer,R\n
-34,{},Punggol,R\n
-35,{},Queenstown,R\n
-36,{},River Valley,R\n
-37,{},Rochor,R\n
-38,{},Seletar,R\n
-39,{},Sembawang,R\n
-40,{},Sengkang,R\n
-41,{},Serangoon,R\n
-42,{},Simpang,R\n
-43,{},Singapore River,R\n
-44,{},Southern Islands,R\n
-45,{},Straits View,R\n
-46,{},Sungei Kadut,R\n
-47,{},Tampines,R\n
-48,{},Tanglin,R\n
-49,{},Tengah,R\n
-50,{},Toa Payoh,R\n
-51,{},Tuas,R\n
-52,{},Western Islands,R\n
-53,{},Western Water Catchment,R\n
-54,{},Woodlands,R\n
-55,{},Yishun,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Ang Mo Kio,L
+2,{},Bedok,L
+3,{},Bishan,L
+4,{},Boon Lay,L
+5,{},Bukit Batok,L
+6,{},Bukit Merah,L
+7,{},Bukit Panjang,L
+8,{},Bukit Timah,L
+9,{},Central Water Catchment,L
+10,{},Changi,L
+11,{},Changi Bay,L
+12,{},Choa Chu Kang,L
+13,{},Clementi,L
+14,{},Downtown Core,L
+15,{},Geylang,L
+16,{},Hougang,L
+17,{},Jurong East,L
+18,{},Jurong West,L
+19,{},Kallang,L
+20,{},Lim Chu Kang,L
+21,{},Mandai,L
+22,{},Marina East,L
+23,{},Marina South,L
+24,{},Marine Parade,L
+25,{},Museum,L
+26,{},Newton,L
+27,{},North-eastern Islands,L
+28,{},Novena,R
+29,{},Orchard,R
+30,{},Outram,R
+31,{},Pasir Ris,R
+32,{},Paya Lebar,R
+33,{},Pioneer,R
+34,{},Punggol,R
+35,{},Queenstown,R
+36,{},River Valley,R
+37,{},Rochor,R
+38,{},Seletar,R
+39,{},Sembawang,R
+40,{},Sengkang,R
+41,{},Serangoon,R
+42,{},Simpang,R
+43,{},Singapore River,R
+44,{},Southern Islands,R
+45,{},Straits View,R
+46,{},Sungei Kadut,R
+47,{},Tampines,R
+48,{},Tanglin,R
+49,{},Tengah,R
+50,{},Toa Payoh,R
+51,{},Tuas,R
+52,{},Western Islands,R
+53,{},Western Water Catchment,R
+54,{},Woodlands,R
+55,{},Yishun,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

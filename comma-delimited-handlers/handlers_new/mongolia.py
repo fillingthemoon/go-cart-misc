@@ -22,29 +22,29 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Arhangay,L\n
-2,{},Bayan-Olgii,L\n
-3,{},Bayankhongor,L\n
-4,{},Bulgan,L\n
-5,{},Darkhan-Uul,L\n
-6,{},Dornod,L\n
-7,{},Dornogovi,L\n
-8,{},Dundgovi,L\n
-9,{},Zavkhan,L\n
-10,{},Govi-Altai,L\n
-11,{},Govisumber,R\n
-12,{},Khentii,R\n
-13,{},Khovd,R\n
-14,{},Khovsgol,R\n
-15,{},Omnogovi,R\n
-16,{},Orkhon,R\n
-17,{},Ovorkhangai,R\n
-18,{},Selenge,R\n
-19,{},Sukhbaatar,R\n
-20,{},Tov,R\n
-21,{},Ulaanbaatar,R\n
-22,{},Uvs,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Arhangay,L
+2,{},Bayan-Olgii,L
+3,{},Bayankhongor,L
+4,{},Bulgan,L
+5,{},Darkhan-Uul,L
+6,{},Dornod,L
+7,{},Dornogovi,L
+8,{},Dundgovi,L
+9,{},Zavkhan,L
+10,{},Govi-Altai,L
+11,{},Govisumber,R
+12,{},Khentii,R
+13,{},Khovd,R
+14,{},Khovsgol,R
+15,{},Omnogovi,R
+16,{},Orkhon,R
+17,{},Ovorkhangai,R
+18,{},Selenge,R
+19,{},Sukhbaatar,R
+20,{},Tov,R
+21,{},Ulaanbaatar,R
+22,{},Uvs,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

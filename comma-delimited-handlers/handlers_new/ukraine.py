@@ -22,34 +22,34 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Cherkasy,L\n
-2,{},Chernihiv,L\n
-3,{},Chernivtsi,L\n
-4,{},Crimea,L\n
-5,{},Dnipropetrovsk,L\n
-6,{},Donetsk,L\n
-7,{},Ivano-Frankivsk,L\n
-8,{},Kharkiv,L\n
-9,{},Kherson,L\n
-10,{},Khmelnytskyi,L\n
-11,{},Kiev,L\n
-12,{},Kiev City,L\n
-13,{},Kirovohrad,L\n
-14,{},Lviv,R\n
-15,{},Luhansk,R\n
-16,{},Mykolayiv,R\n
-17,{},Odessa,R\n
-18,{},Poltava,R\n
-19,{},Rivne,R\n
-20,{},Sevastopol,R\n
-21,{},Sumy,R\n
-22,{},Ternopil,R\n
-23,{},Transcarpathia,R\n
-24,{},Vinnytsya,R\n
-25,{},Volyn,R\n
-26,{},Zaporizhzhya,R\n
-27,{},Zhytomyr,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Cherkasy,L
+2,{},Chernihiv,L
+3,{},Chernivtsi,L
+4,{},Crimea,L
+5,{},Dnipropetrovsk,L
+6,{},Donetsk,L
+7,{},Ivano-Frankivsk,L
+8,{},Kharkiv,L
+9,{},Kherson,L
+10,{},Khmelnytskyi,L
+11,{},Kiev,L
+12,{},Kiev City,L
+13,{},Kirovohrad,L
+14,{},Lviv,R
+15,{},Luhansk,R
+16,{},Mykolayiv,R
+17,{},Odessa,R
+18,{},Poltava,R
+19,{},Rivne,R
+20,{},Sevastopol,R
+21,{},Sumy,R
+22,{},Ternopil,R
+23,{},Transcarpathia,R
+24,{},Vinnytsya,R
+25,{},Volyn,R
+26,{},Zaporizhzhya,R
+27,{},Zhytomyr,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

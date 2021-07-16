@@ -22,55 +22,55 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Adrar,L\n
-2,{},Ain Defla,L\n
-3,{},Ain Temouchent,L\n
-4,{},Alger,L\n
-5,{},Annaba,L\n
-6,{},Batna,L\n
-7,{},Bechar,L\n
-8,{},Bejaia,L\n
-9,{},Biskra,L\n
-10,{},Blida,L\n
-11,{},Bordj Bou Arreridj,L\n
-12,{},Bouira,L\n
-13,{},Boumerdes,L\n
-14,{},Chlef,L\n
-15,{},Constantine,L\n
-16,{},Djelfa,L\n
-17,{},El Bayadh,L\n
-18,{},El Oued,L\n
-19,{},El Tarf,L\n
-20,{},Ghardaia,L\n
-21,{},Guelma,L\n
-22,{},Illizi,L\n
-23,{},Jijel,L\n
-24,{},Khenchela,R\n
-25,{},Laghouat,R\n
-26,{},M'Sila,R\n
-27,{},Mascara,R\n
-28,{},Medea,R\n
-29,{},Mila,R\n
-30,{},Mostaganem,R\n
-31,{},Naama,R\n
-32,{},Oran,R\n
-33,{},Ouargla,R\n
-34,{},Oum el Bouaghi,R\n
-35,{},Relizane,R\n
-36,{},Saida,R\n
-37,{},Setif,R\n
-38,{},Sidi Bel Abbes,R\n
-39,{},Skikda,R\n
-40,{},Souk Ahras,R\n
-41,{},Tamanghasset,R\n
-42,{},Tebessa,R\n
-43,{},Tiaret,R\n
-44,{},Tindouf,R\n
-45,{},Tipaza,R\n
-46,{},Tissemsilt,R\n
-47,{},Tizi Ouzou,R\n
-48,{},Tlemcen,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Adrar,L
+2,{},Ain Defla,L
+3,{},Ain Temouchent,L
+4,{},Alger,L
+5,{},Annaba,L
+6,{},Batna,L
+7,{},Bechar,L
+8,{},Bejaia,L
+9,{},Biskra,L
+10,{},Blida,L
+11,{},Bordj Bou Arreridj,L
+12,{},Bouira,L
+13,{},Boumerdes,L
+14,{},Chlef,L
+15,{},Constantine,L
+16,{},Djelfa,L
+17,{},El Bayadh,L
+18,{},El Oued,L
+19,{},El Tarf,L
+20,{},Ghardaia,L
+21,{},Guelma,L
+22,{},Illizi,L
+23,{},Jijel,L
+24,{},Khenchela,R
+25,{},Laghouat,R
+26,{},M'Sila,R
+27,{},Mascara,R
+28,{},Medea,R
+29,{},Mila,R
+30,{},Mostaganem,R
+31,{},Naama,R
+32,{},Oran,R
+33,{},Ouargla,R
+34,{},Oum el Bouaghi,R
+35,{},Relizane,R
+36,{},Saida,R
+37,{},Setif,R
+38,{},Sidi Bel Abbes,R
+39,{},Skikda,R
+40,{},Souk Ahras,R
+41,{},Tamanghasset,R
+42,{},Tebessa,R
+43,{},Tiaret,R
+44,{},Tindouf,R
+45,{},Tipaza,R
+46,{},Tissemsilt,R
+47,{},Tizi Ouzou,R
+48,{},Tlemcen,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

@@ -22,25 +22,25 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Aveiro,L\n
-2,{},Beja,L\n
-3,{},Braga,L\n
-4,{},Braganca,L\n
-5,{},Castelo Branco,L\n
-6,{},Coimbra,L\n
-7,{},Evora,L\n
-8,{},Faro,L\n
-9,{},Guarda,R\n
-10,{},Leiria,R\n
-11,{},Lisboa,R\n
-12,{},Portalegre,R\n
-13,{},Porto,R\n
-14,{},Santarem,R\n
-15,{},Setubal,R\n
-16,{},Viana do Castelo,R\n
-17,{},Vila Real,R\n
-18,{},Viseu,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Aveiro,L
+2,{},Beja,L
+3,{},Braga,L
+4,{},Braganca,L
+5,{},Castelo Branco,L
+6,{},Coimbra,L
+7,{},Evora,L
+8,{},Faro,L
+9,{},Guarda,R
+10,{},Leiria,R
+11,{},Lisboa,R
+12,{},Portalegre,R
+13,{},Porto,R
+14,{},Santarem,R
+15,{},Setubal,R
+16,{},Viana do Castelo,R
+17,{},Vila Real,R
+18,{},Viseu,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

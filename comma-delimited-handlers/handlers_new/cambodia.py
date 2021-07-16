@@ -22,32 +22,32 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Banteay Meanchey,L\n
-2,{},Battambang,L\n
-3,{},Kampong Cham,L\n
-4,{},Kampong Chhnang,L\n
-5,{},Kampong Speu,L\n
-6,{},Kampong Thom,L\n
-7,{},Kampot,L\n
-8,{},Kandal,L\n
-9,{},Koh Kong,L\n
-10,{},Kep,L\n
-11,{},Kratie,L\n
-12,{},Pailin,L\n
-13,{},Preah Sihanouk,R\n
-14,{},Mondul Kiri,R\n
-15,{},Otdar Meanchey,R\n
-16,{},Phnom Penh,R\n
-17,{},Pursat,R\n
-18,{},Preah Vihear,R\n
-19,{},Prey Veng,R\n
-20,{},Ratanak Kiri,R\n
-21,{},Siem Reap,R\n
-22,{},Stung Treng,R\n
-23,{},Svay Rieng,R\n
-24,{},Takeo,R\n
-25,{},Tbong Khmum,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Banteay Meanchey,L
+2,{},Battambang,L
+3,{},Kampong Cham,L
+4,{},Kampong Chhnang,L
+5,{},Kampong Speu,L
+6,{},Kampong Thom,L
+7,{},Kampot,L
+8,{},Kandal,L
+9,{},Koh Kong,L
+10,{},Kep,L
+11,{},Kratie,L
+12,{},Pailin,L
+13,{},Preah Sihanouk,R
+14,{},Mondul Kiri,R
+15,{},Otdar Meanchey,R
+16,{},Phnom Penh,R
+17,{},Pursat,R
+18,{},Preah Vihear,R
+19,{},Prey Veng,R
+20,{},Ratanak Kiri,R
+21,{},Siem Reap,R
+22,{},Stung Treng,R
+23,{},Svay Rieng,R
+24,{},Takeo,R
+25,{},Tbong Khmum,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

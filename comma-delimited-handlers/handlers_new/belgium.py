@@ -22,10 +22,10 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Bruxelles,L\n
-2,{},Vlaanderen,R\n
-3,{},Wallonie,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Bruxelles,L
+2,{},Vlaanderen,R
+3,{},Wallonie,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

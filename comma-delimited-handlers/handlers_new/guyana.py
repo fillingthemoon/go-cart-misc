@@ -22,17 +22,17 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Barima-Waini,L\n
-2,{},Cuyuni-Mazaruni,L\n
-3,{},Demerara-Mahaica,L\n
-4,{},East Berbice-Corentyne,L\n
-5,{},Essequibo Islands-West Demerara,R\n
-6,{},Mahaica-Berbice,R\n
-7,{},Pomeroon-Supenaam,R\n
-8,{},Potaro-Siparuni,R\n
-9,{},Upper Demerara-Berbice,R\n
-10,{},Upper Takutu-Upper Essequibo,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Barima-Waini,L
+2,{},Cuyuni-Mazaruni,L
+3,{},Demerara-Mahaica,L
+4,{},East Berbice-Corentyne,L
+5,{},Essequibo Islands-West Demerara,R
+6,{},Mahaica-Berbice,R
+7,{},Pomeroon-Supenaam,R
+8,{},Potaro-Siparuni,R
+9,{},Upper Demerara-Berbice,R
+10,{},Upper Takutu-Upper Essequibo,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

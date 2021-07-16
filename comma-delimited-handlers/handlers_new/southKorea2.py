@@ -22,24 +22,24 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Busan,L\n
-2,{},Chungcheongbuk-do,L\n
-3,{},Chungcheongnam-do,L\n
-4,{},Daegu,L\n
-5,{},Daejeon,L\n
-6,{},Gangwon-do,L\n
-7,{},Gwangju,L\n
-8,{},Gyeonggi-do,L\n
-9,{},Gyeongsangbuk-do,R\n
-10,{},Gyeongsangnam-do,R\n
-11,{},Incheon,R\n
-12,{},Jeju,R\n
-13,{},Jeollabuk-do,R\n
-14,{},Jeollanam-do,R\n
-15,{},Sejong,R\n
-16,{},Seoul,R\n
-17,{},Ulsan,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Busan,L
+2,{},Chungcheongbuk-do,L
+3,{},Chungcheongnam-do,L
+4,{},Daegu,L
+5,{},Daejeon,L
+6,{},Gangwon-do,L
+7,{},Gwangju,L
+8,{},Gyeonggi-do,L
+9,{},Gyeongsangbuk-do,R
+10,{},Gyeongsangnam-do,R
+11,{},Incheon,R
+12,{},Jeju,R
+13,{},Jeollabuk-do,R
+14,{},Jeollanam-do,R
+15,{},Sejong,R
+16,{},Seoul,R
+17,{},Ulsan,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

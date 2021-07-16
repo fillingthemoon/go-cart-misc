@@ -22,27 +22,27 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Abruzzo,L\n
-2,{},Apulia,L\n
-3,{},Basilicata,L\n
-4,{},Calabria,L\n
-5,{},Campania,L\n
-6,{},Emilia-Romagna,L\n
-7,{},Friuli-Venezia Giulia,L\n
-8,{},Lazio,L\n
-9,{},Liguria,L\n
-10,{},Lombardia,R\n
-11,{},Marche,R\n
-12,{},Molise,R\n
-13,{},Piemonte,R\n
-14,{},Sardegna,R\n
-15,{},Sicily,R\n
-16,{},Toscana,R\n
-17,{},Trentino-Alto Adige,R\n
-18,{},Umbria,R\n
-19,{},Valle d'Aosta,R\n
-20,{},Veneto,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Abruzzo,L
+2,{},Apulia,L
+3,{},Basilicata,L
+4,{},Calabria,L
+5,{},Campania,L
+6,{},Emilia-Romagna,L
+7,{},Friuli-Venezia Giulia,L
+8,{},Lazio,L
+9,{},Liguria,L
+10,{},Lombardia,R
+11,{},Marche,R
+12,{},Molise,R
+13,{},Piemonte,R
+14,{},Sardegna,R
+15,{},Sicily,R
+16,{},Toscana,R
+17,{},Trentino-Alto Adige,R
+18,{},Umbria,R
+19,{},Valle d'Aosta,R
+20,{},Veneto,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

@@ -22,29 +22,29 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Al Butnan,L\n
-2,{},Al Jabal al Akhdar,L\n
-3,{},Al Jabal al Gharbi,L\n
-4,{},Al Jifarah,L\n
-5,{},Al Jufrah,L\n
-6,{},Al Kufrah,L\n
-7,{},Al Marj,L\n
-8,{},Al Marqab,L\n
-9,{},Al Wahat,L\n
-10,{},An Nuqat al Khams,L\n
-11,{},Az Zawiyah,R\n
-12,{},Benghazi,R\n
-13,{},Darnah,R\n
-14,{},Ghat,R\n
-15,{},Misratah,R\n
-16,{},Murzuq,R\n
-17,{},Nalut,R\n
-18,{},Sabha,R\n
-19,{},Surt,R\n
-20,{},Tripoli,R\n
-21,{},Wadi al Hayat,R\n
-22,{},Wadi ash Shati',R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Al Butnan,L
+2,{},Al Jabal al Akhdar,L
+3,{},Al Jabal al Gharbi,L
+4,{},Al Jifarah,L
+5,{},Al Jufrah,L
+6,{},Al Kufrah,L
+7,{},Al Marj,L
+8,{},Al Marqab,L
+9,{},Al Wahat,L
+10,{},An Nuqat al Khams,L
+11,{},Az Zawiyah,R
+12,{},Benghazi,R
+13,{},Darnah,R
+14,{},Ghat,R
+15,{},Misratah,R
+16,{},Murzuq,R
+17,{},Nalut,R
+18,{},Sabha,R
+19,{},Surt,R
+20,{},Tripoli,R
+21,{},Wadi al Hayat,R
+22,{},Wadi ash Shati',R""".format(*values)
     
     def expect_geojson_output(self):
         return True

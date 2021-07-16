@@ -22,49 +22,49 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Alba,L\n
-2,{},Arad,L\n
-3,{},Arges,L\n
-4,{},Bacau,L\n
-5,{},Bihor,L\n
-6,{},Bistrita-Nasaud,L\n
-7,{},Botosani,L\n
-8,{},Braila,L\n
-9,{},Brasov,L\n
-10,{},Bucharest,L\n
-11,{},Buzau,L\n
-12,{},Calarasi,L\n
-13,{},Caras-Severin,L\n
-14,{},Cluj,L\n
-15,{},Constanta,L\n
-16,{},Covasna,L\n
-17,{},Dambovita,L\n
-18,{},Dolj,L\n
-19,{},Galati,L\n
-20,{},Giurgiu,L\n
-21,{},Gorj,R\n
-22,{},Harghita,R\n
-23,{},Hunedoara,R\n
-24,{},Ialomita,R\n
-25,{},Iasi,R\n
-26,{},Ilfov,R\n
-27,{},Maramures,R\n
-28,{},Mehedinti,R\n
-29,{},Mures,R\n
-30,{},Neamt,R\n
-31,{},Olt,R\n
-32,{},Prahova,R\n
-33,{},Salaj,R\n
-34,{},Satu Mare,R\n
-35,{},Sibiu,R\n
-36,{},Suceava,R\n
-37,{},Teleorman,R\n
-38,{},Timis,R\n
-39,{},Tulcea,R\n
-40,{},Valcea,R\n
-41,{},Vaslui,R\n
-42,{},Vrancea,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Alba,L
+2,{},Arad,L
+3,{},Arges,L
+4,{},Bacau,L
+5,{},Bihor,L
+6,{},Bistrita-Nasaud,L
+7,{},Botosani,L
+8,{},Braila,L
+9,{},Brasov,L
+10,{},Bucharest,L
+11,{},Buzau,L
+12,{},Calarasi,L
+13,{},Caras-Severin,L
+14,{},Cluj,L
+15,{},Constanta,L
+16,{},Covasna,L
+17,{},Dambovita,L
+18,{},Dolj,L
+19,{},Galati,L
+20,{},Giurgiu,L
+21,{},Gorj,R
+22,{},Harghita,R
+23,{},Hunedoara,R
+24,{},Ialomita,R
+25,{},Iasi,R
+26,{},Ilfov,R
+27,{},Maramures,R
+28,{},Mehedinti,R
+29,{},Mures,R
+30,{},Neamt,R
+31,{},Olt,R
+32,{},Prahova,R
+33,{},Salaj,R
+34,{},Satu Mare,R
+35,{},Sibiu,R
+36,{},Suceava,R
+37,{},Teleorman,R
+38,{},Timis,R
+39,{},Tulcea,R
+40,{},Valcea,R
+41,{},Vaslui,R
+42,{},Vrancea,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

@@ -22,25 +22,25 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Bengo,L\n
-2,{},Benguela,L\n
-3,{},Bie,L\n
-4,{},Cabinda,L\n
-5,{},Cuando Cubango,L\n
-6,{},Cuanza Norte,L\n
-7,{},Cuanza Sul,L\n
-8,{},Cunene,L\n
-9,{},Huambo,R\n
-10,{},Huila,R\n
-11,{},Luanda,R\n
-12,{},Lunda Norte,R\n
-13,{},Lunda Sul,R\n
-14,{},Malanje,R\n
-15,{},Moxico,R\n
-16,{},Namibe,R\n
-17,{},Uige,R\n
-18,{},Zaire,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Bengo,L
+2,{},Benguela,L
+3,{},Bie,L
+4,{},Cabinda,L
+5,{},Cuando Cubango,L
+6,{},Cuanza Norte,L
+7,{},Cuanza Sul,L
+8,{},Cunene,L
+9,{},Huambo,R
+10,{},Huila,R
+11,{},Luanda,R
+12,{},Lunda Norte,R
+13,{},Lunda Sul,R
+14,{},Malanje,R
+15,{},Moxico,R
+16,{},Namibe,R
+17,{},Uige,R
+18,{},Zaire,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

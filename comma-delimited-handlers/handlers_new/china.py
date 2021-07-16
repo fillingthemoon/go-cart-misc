@@ -25,41 +25,41 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Anhui AH,L\n
-2,{},Beijing BJ,L\n
-3,{},Chongqing CQ,L\n
-4,{},Fujian FJ,L\n
-5,{},Gansu GS,L\n
-6,{},Guangxi GX,L\n
-7,{},Guizhou GZ,L\n
-8,{},Hainan HA,L\n
-9,{},Hebei HEB,L\n
-10,{},Heilongjiang HL,L\n
-11,{},Henan HEN,L\n
-12,{},Hubei HUB,L\n
-13,{},Hunan HUN,L\n
-14,{},Jiangsu JS,L\n
-15,{},Jiangxi JX,L\n
-16,{},Jilin JL,L\n
-17,{},Liaoning LN,R\n
-18,{},Inner Mongolia NM,R\n
-19,{},Ningxia NX,R\n
-20,{},Qinghai QH,R\n
-21,{},Shaanxi SAA,R\n
-22,{},Shandong SD,R\n
-23,{},Shanghai SHG,R\n
-24,{},Shanxi SAX,R\n
-25,{},Sichuan SC,R\n
-26,{},Tianjin TJ,R\n
-27,{},Xinjiang XJ,R\n
-28,{},Tibet TAR,R\n
-29,{},Yunnan YN,R\n
-30,{},Zhejiang ZJ,R\n
-31,{},Guangdong GD,R\n
-32,{},Hong Kong HK,R\n
-33,{},Macau MO,R\n
-34,{},Taiwan TW,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Anhui AH,L
+2,{},Beijing BJ,L
+3,{},Chongqing CQ,L
+4,{},Fujian FJ,L
+5,{},Gansu GS,L
+6,{},Guangxi GX,L
+7,{},Guizhou GZ,L
+8,{},Hainan HA,L
+9,{},Hebei HEB,L
+10,{},Heilongjiang HL,L
+11,{},Henan HEN,L
+12,{},Hubei HUB,L
+13,{},Hunan HUN,L
+14,{},Jiangsu JS,L
+15,{},Jiangxi JX,L
+16,{},Jilin JL,L
+17,{},Liaoning LN,R
+18,{},Inner Mongolia NM,R
+19,{},Ningxia NX,R
+20,{},Qinghai QH,R
+21,{},Shaanxi SAA,R
+22,{},Shandong SD,R
+23,{},Shanghai SHG,R
+24,{},Shanxi SAX,R
+25,{},Sichuan SC,R
+26,{},Tianjin TJ,R
+27,{},Xinjiang XJ,R
+28,{},Tibet TAR,R
+29,{},Yunnan YN,R
+30,{},Zhejiang ZJ,R
+31,{},Guangdong GD,R
+32,{},Hong Kong HK,R
+33,{},Macau MO,R
+34,{},Taiwan TW,R""".format(*values)
 
     def csv_to_area_string_and_colors(self, csvfile):
 

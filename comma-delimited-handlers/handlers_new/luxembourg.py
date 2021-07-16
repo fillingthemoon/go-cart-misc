@@ -22,19 +22,19 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Capellen,L\n
-2,{},Clervaux,L\n
-3,{},Diekirch,L\n
-4,{},Echternach,L\n
-5,{},Esch-sur-Alzette,L\n
-6,{},Grevenmacher,R\n
-7,{},Luxembourg,R\n
-8,{},Mersch,R\n
-9,{},Redange,R\n
-10,{},Remich,R\n
-11,{},Vianden,R\n
-12,{},Wiltz,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Capellen,L
+2,{},Clervaux,L
+3,{},Diekirch,L
+4,{},Echternach,L
+5,{},Esch-sur-Alzette,L
+6,{},Grevenmacher,R
+7,{},Luxembourg,R
+8,{},Mersch,R
+9,{},Redange,R
+10,{},Remich,R
+11,{},Vianden,R
+12,{},Wiltz,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

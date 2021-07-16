@@ -22,44 +22,44 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Abia,L\n
-2,{},Adamawa,L\n
-3,{},Akwa Ibom,L\n
-4,{},Anambra,L\n
-5,{},Bauchi,L\n
-6,{},Bayelsa,L\n
-7,{},Benue,L\n
-8,{},Borno,L\n
-9,{},Cross River,L\n
-10,{},Delta,L\n
-11,{},Ebonyi,L\n
-12,{},Edo,L\n
-13,{},Ekiti,L\n
-14,{},Enugu,L\n
-15,{},Federal Capital Territory,L\n
-16,{},Gombe,L\n
-17,{},Imo,L\n
-18,{},Jigawa,L\n
-19,{},Kaduna,R\n
-20,{},Kano,R\n
-21,{},Katsina,R\n
-22,{},Kebbi,R\n
-23,{},Kogi,R\n
-24,{},Kwara,R\n
-25,{},Lagos,R\n
-26,{},Nassarawa,R\n
-27,{},Niger,R\n
-28,{},Ogun,R\n
-29,{},Ondo,R\n
-30,{},Osun,R\n
-31,{},Oyo,R\n
-32,{},Plateau,R\n
-33,{},Rivers,R\n
-34,{},Sokoto,R\n
-35,{},Taraba,R\n
-36,{},Yobe,R\n
-37,{},Zamfara,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Abia,L
+2,{},Adamawa,L
+3,{},Akwa Ibom,L
+4,{},Anambra,L
+5,{},Bauchi,L
+6,{},Bayelsa,L
+7,{},Benue,L
+8,{},Borno,L
+9,{},Cross River,L
+10,{},Delta,L
+11,{},Ebonyi,L
+12,{},Edo,L
+13,{},Ekiti,L
+14,{},Enugu,L
+15,{},Federal Capital Territory,L
+16,{},Gombe,L
+17,{},Imo,L
+18,{},Jigawa,L
+19,{},Kaduna,R
+20,{},Kano,R
+21,{},Katsina,R
+22,{},Kebbi,R
+23,{},Kogi,R
+24,{},Kwara,R
+25,{},Lagos,R
+26,{},Nassarawa,R
+27,{},Niger,R
+28,{},Ogun,R
+29,{},Ondo,R
+30,{},Osun,R
+31,{},Oyo,R
+32,{},Plateau,R
+33,{},Rivers,R
+34,{},Sokoto,R
+35,{},Taraba,R
+36,{},Yobe,R
+37,{},Zamfara,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

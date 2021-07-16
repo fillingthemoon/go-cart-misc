@@ -22,20 +22,20 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Alberta,L\n
-2,{},British Columbia,L\n
-3,{},Manitoba,L\n
-4,{},New Brunswick,L\n
-5,{},Newfoundland and Labrador,L\n
-6,{},Northwest Territories,L\n
-7,{},Nova Scotia,R\n
-8,{},Nunavut,R\n
-9,{},Ontario,R\n
-10,{},Prince Edward Island,R\n
-11,{},Quebec,R\n
-12,{},Saskatchewan,R\n
-13,{},Yukon,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Alberta,L
+2,{},British Columbia,L
+3,{},Manitoba,L
+4,{},New Brunswick,L
+5,{},Newfoundland and Labrador,L
+6,{},Northwest Territories,L
+7,{},Nova Scotia,R
+8,{},Nunavut,R
+9,{},Ontario,R
+10,{},Prince Edward Island,R
+11,{},Quebec,R
+12,{},Saskatchewan,R
+13,{},Yukon,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

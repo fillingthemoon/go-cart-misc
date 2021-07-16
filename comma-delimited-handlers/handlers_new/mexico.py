@@ -22,39 +22,39 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Aguascalientes,L\n
-2,{},Baja California,L\n
-3,{},Baja California Sur,L\n
-4,{},Campeche,L\n
-5,{},Chiapas,L\n
-6,{},Chihuahua,L\n
-7,{},Coahuila,L\n
-8,{},Colima,L\n
-9,{},Mexico City,L\n
-10,{},Durango,L\n
-11,{},Guanajuato,L\n
-12,{},Guerrero,L\n
-13,{},Hidalgo,L\n
-14,{},Jalisco,L\n
-15,{},Mexico State,L\n
-16,{},Michoacan,R\n
-17,{},Morelos,R\n
-18,{},Nayarit,R\n
-19,{},Nuevo Leon,R\n
-20,{},Oaxaca,R\n
-21,{},Puebla,R\n
-22,{},Queretaro,R\n
-23,{},Quintana Roo,R\n
-24,{},San Luis Potosi,R\n
-25,{},Sinaloa,R\n
-26,{},Sonora,R\n
-27,{},Tabasco,R\n
-28,{},Tamaulipas,R\n
-29,{},Tlaxcala,R\n
-30,{},Veracruz,R\n
-31,{},Yucatan,R\n
-32,{},Zacatecas,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Aguascalientes,L
+2,{},Baja California,L
+3,{},Baja California Sur,L
+4,{},Campeche,L
+5,{},Chiapas,L
+6,{},Chihuahua,L
+7,{},Coahuila,L
+8,{},Colima,L
+9,{},Mexico City,L
+10,{},Durango,L
+11,{},Guanajuato,L
+12,{},Guerrero,L
+13,{},Hidalgo,L
+14,{},Jalisco,L
+15,{},Mexico State,L
+16,{},Michoacan,R
+17,{},Morelos,R
+18,{},Nayarit,R
+19,{},Nuevo Leon,R
+20,{},Oaxaca,R
+21,{},Puebla,R
+22,{},Queretaro,R
+23,{},Quintana Roo,R
+24,{},San Luis Potosi,R
+25,{},Sinaloa,R
+26,{},Sonora,R
+27,{},Tabasco,R
+28,{},Tamaulipas,R
+29,{},Tlaxcala,R
+30,{},Veracruz,R
+31,{},Yucatan,R
+32,{},Zacatecas,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

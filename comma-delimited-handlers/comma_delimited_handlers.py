@@ -27,11 +27,11 @@ def comma_delimited_handlers():
 
           # First line of CSV
           if re.search("\s*return \"\"\"\d* {} [\w\s'-]*", line):
-            new_return_line = "        return \"\"\"cartogram_id,Region Data,Region Name,Inset\\n"
+            new_return_line = "        return \"\"\"cartogram_id,Region Data,Region Name,Inset"
             
             first_row = re.search("(\d* {} [\w\s'-]*)", line).group(1)
             first_row_with_commas = first_row.replace(" {} ", ",{},")
-            first_row_with_commas_n = first_row_with_commas.replace("\n", ",L\\n\n")
+            first_row_with_commas_n = first_row_with_commas.replace("\n", ",L\n")
 
             f_out.write(new_return_line + "\n" + first_row_with_commas_n)
 
@@ -40,7 +40,7 @@ def comma_delimited_handlers():
           # Last line of CSV
           elif re.search("\d* {} [\w\s'-]*\"\"\"", line):
             last_line_with_commas = line.replace(" {} ", ",{},")
-            last_line_with_commas_n = last_line_with_commas.replace("\"\"\"", ",R\\n\"\"\"")
+            last_line_with_commas_n = last_line_with_commas.replace("\"\"\"", ",R\"\"\"")
             f_out.write(last_line_with_commas_n)
             
             csv_line += 1
@@ -50,9 +50,9 @@ def comma_delimited_handlers():
             line_with_commas = line.replace(" {} ", ",{},")
             
             if csv_line < num_csv_lines / 2: 
-              line_with_commas_n = line_with_commas.replace("\n", ",L\\n\n")
+              line_with_commas_n = line_with_commas.replace("\n", ",L\n")
             else: 
-              line_with_commas_n = line_with_commas.replace("\n", ",R\\n\n")
+              line_with_commas_n = line_with_commas.replace("\n", ",R\n")
             f_out.write(line_with_commas_n)
             
             csv_line += 1

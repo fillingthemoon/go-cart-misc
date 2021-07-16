@@ -25,56 +25,56 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-43,{},Alabama,L\n
-37,{},Arizona,L\n
-47,{},Arkansas,L\n
-25,{},California,L\n
-32,{},Colorado,L\n
-19,{},Connecticut,L\n
-29,{},Delaware,L\n
-28,{},District of Columbia,L\n
-49,{},Florida,L\n
-45,{},Georgia,L\n
-9,{},Idaho,L\n
-27,{},Illinois,L\n
-22,{},Indiana,L\n
-14,{},Iowa,L\n
-34,{},Kansas,L\n
-33,{},Kentucky,L\n
-48,{},Louisiana,L\n
-4,{},Maine,L\n
-31,{},Maryland,L\n
-15,{},Massachusetts,L\n
-50,{},Michigan,L\n
-11,{},Minnesota,L\n
-44,{},Mississippi,L\n
-36,{},Missouri,L\n
-3,{},Montana,R\n
-16,{},Nebraska,R\n
-23,{},Nevada,R\n
-13,{},New Hampshire,R\n
-21,{},New Jersey,R\n
-42,{},New Mexico,R\n
-17,{},New York,R\n
-39,{},North Carolina,R\n
-5,{},North Dakota,R\n
-26,{},Ohio,R\n
-38,{},Oklahoma,R\n
-12,{},Oregon,R\n
-18,{},Pennsylvania,R\n
-20,{},Rhode Island,R\n
-46,{},South Carolina,R\n
-6,{},South Dakota,R\n
-40,{},Tennessee,R\n
-41,{},Texas,R\n
-24,{},Utah,R\n
-10,{},Vermont,R\n
-35,{},Virginia,R\n
-2,{},Washington,R\n
-30,{},West Virginia,R\n
-8,{},Wisconsin,R\n
-7,{},Wyoming,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name
+43,{},Alabama
+37,{},Arizona
+47,{},Arkansas
+25,{},California
+32,{},Colorado
+19,{},Connecticut
+29,{},Delaware
+28,{},District of Columbia
+49,{},Florida
+45,{},Georgia
+9,{},Idaho
+27,{},Illinois
+22,{},Indiana
+14,{},Iowa
+34,{},Kansas
+33,{},Kentucky
+48,{}ouisiana
+4,{},Maine
+31,{},Maryland
+15,{},Massachusetts
+50,{},Michigan
+11,{},Minnesota
+44,{},Mississippi
+36,{},Missouri
+3,{},Montana
+16,{},Nebraska
+23,{},Nevada
+13,{},New Hampshire
+21,{},New Jersey
+42,{},New Mexico
+17,{},New York
+39,{},North Carolina
+5,{},North Dakota
+26,{},Ohio
+38,{},Oklahoma
+12,{},Oregon
+18,{},Pennsylvania
+20,{},Rhode Island
+46,{},South Carolina
+6,{},South Dakota
+40,{},Tennessee
+41,{},Texas
+24,{},Utah
+10,{},Vermont
+35,{},Virginia
+2,{},Washington
+30,{},West Virginia
+8,{},Wisconsin
+7,{},Wyoming""".format(*values)
 
     def csv_to_area_string_and_colors(self, csvfile):
 

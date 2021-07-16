@@ -17,25 +17,25 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Attapeu,L\n
-2,{},Bokeo,L\n
-3,{},Borikhamxai,L\n
-4,{},Champasak,L\n
-5,{},Houaphanh,L\n
-6,{},Khammouane,L\n
-7,{},Luang Namtha,L\n
-8,{},Luang Prabang,L\n
-9,{},Oudomxay,R\n
-10,{},Phongsaly,R\n
-11,{},Salavan,R\n
-12,{},Savannakhet,R\n
-13,{},Vientiane [Prefecture],R\n
-14,{},Vientiane,R\n
-15,{},Xaignabouli,R\n
-16,{},Xaisomboun,R\n
-17,{},Sekong,R\n
-18,{},Xiangkhouang,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Attapeu,L
+2,{},Bokeo,L
+3,{},Borikhamxai,L
+4,{},Champasak,L
+5,{},Houaphanh,L
+6,{},Khammouane,L
+7,{},Luang Namtha,L
+8,{},Luang Prabang,L
+9,{},Oudomxay,R
+10,{},Phongsaly,R
+11,{},Salavan,R
+12,{},Savannakhet,R
+13,{},Vientiane [Prefecture],R
+14,{},Vientiane,R
+15,{},Xaignabouli,R
+16,{},Xaisomboun,R
+17,{},Sekong,R
+18,{},Xiangkhouang,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

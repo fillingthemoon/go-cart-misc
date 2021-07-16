@@ -22,42 +22,42 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Austria,L\n
-2,{},Belgium,L\n
-3,{},Bosnia and Herzegovina,L\n
-4,{},Bulgaria,L\n
-5,{},Croatia,L\n
-6,{},Czech Republic,L\n
-7,{},Denmark,L\n
-8,{},Estonia,L\n
-9,{},Finland,L\n
-10,{},France,L\n
-11,{},Germany,L\n
-12,{},Greece,L\n
-13,{},Hungary,L\n
-14,{},Iceland,L\n
-15,{},Ireland,L\n
-16,{},Italy,L\n
-17,{},Latvia,L\n
-18,{},Liechtenstein,R\n
-19,{},Lithuania,R\n
-20,{},Luxembourg,R\n
-21,{},Malta,R\n
-22,{},Netherlands,R\n
-23,{},North Macedonia,R\n
-24,{},Norway,R\n
-25,{},Poland,R\n
-26,{},Portugal,R\n
-27,{},Republic of Cyprus,R\n
-28,{},Republic of Serbia,R\n
-29,{},Romania,R\n
-30,{},Slovakia,R\n
-31,{},Slovenia,R\n
-32,{},Spain,R\n
-33,{},Sweden,R\n
-34,{},Switzerland,R\n
-35,{},United Kingdom,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Austria,L
+2,{},Belgium,L
+3,{},Bosnia and Herzegovina,L
+4,{},Bulgaria,L
+5,{},Croatia,L
+6,{},Czech Republic,L
+7,{},Denmark,L
+8,{},Estonia,L
+9,{},Finland,L
+10,{},France,L
+11,{},Germany,L
+12,{},Greece,L
+13,{},Hungary,L
+14,{},Iceland,L
+15,{},Ireland,L
+16,{},Italy,L
+17,{},Latvia,L
+18,{},Liechtenstein,R
+19,{},Lithuania,R
+20,{},Luxembourg,R
+21,{},Malta,R
+22,{},Netherlands,R
+23,{},North Macedonia,R
+24,{},Norway,R
+25,{},Poland,R
+26,{},Portugal,R
+27,{},Republic of Cyprus,R
+28,{},Republic of Serbia,R
+29,{},Romania,R
+30,{},Slovakia,R
+31,{},Slovenia,R
+32,{},Spain,R
+33,{},Sweden,R
+34,{},Switzerland,R
+35,{},United Kingdom,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

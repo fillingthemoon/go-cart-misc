@@ -22,46 +22,46 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Adams,L\n
-2,{},Asotin,L\n
-3,{},Benton,L\n
-4,{},Chelan,L\n
-5,{},Clallam,L\n
-6,{},Clark,L\n
-7,{},Columbia,L\n
-8,{},Cowlitz,L\n
-9,{},Douglas,L\n
-10,{},Ferry,L\n
-11,{},Franklin,L\n
-12,{},Garfield,L\n
-13,{},Grant,L\n
-14,{},Grays Harbor,L\n
-15,{},Island,L\n
-16,{},Jefferson,L\n
-17,{},King,L\n
-18,{},Kitsap,L\n
-19,{},Kittitas,L\n
-20,{},Klickitat,R\n
-21,{},Lewis,R\n
-22,{},Lincoln,R\n
-23,{},Mason,R\n
-24,{},Okanogan,R\n
-25,{},Pacific,R\n
-26,{},Pend Oreille,R\n
-27,{},Pierce,R\n
-28,{},San Juan,R\n
-29,{},Skagit,R\n
-30,{},Skamania,R\n
-31,{},Snohomish,R\n
-32,{},Spokane,R\n
-33,{},Stevens,R\n
-34,{},Thurston,R\n
-35,{},Wahkiakum,R\n
-36,{},Walla Walla,R\n
-37,{},Whatcom,R\n
-38,{},Whitman,R\n
-39,{},Yakima,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Adams,L
+2,{},Asotin,L
+3,{},Benton,L
+4,{},Chelan,L
+5,{},Clallam,L
+6,{},Clark,L
+7,{},Columbia,L
+8,{},Cowlitz,L
+9,{},Douglas,L
+10,{},Ferry,L
+11,{},Franklin,L
+12,{},Garfield,L
+13,{},Grant,L
+14,{},Grays Harbor,L
+15,{},Island,L
+16,{},Jefferson,L
+17,{},King,L
+18,{},Kitsap,L
+19,{},Kittitas,L
+20,{},Klickitat,R
+21,{},Lewis,R
+22,{},Lincoln,R
+23,{},Mason,R
+24,{},Okanogan,R
+25,{},Pacific,R
+26,{},Pend Oreille,R
+27,{},Pierce,R
+28,{},San Juan,R
+29,{},Skagit,R
+30,{},Skamania,R
+31,{},Snohomish,R
+32,{},Spokane,R
+33,{},Stevens,R
+34,{},Thurston,R
+35,{},Wahkiakum,R
+36,{},Walla Walla,R
+37,{},Whatcom,R
+38,{},Whitman,R
+39,{},Yakima,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

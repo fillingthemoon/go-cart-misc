@@ -22,89 +22,89 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Abra,L\n
-2,{},Agusan del Norte,L\n
-3,{},Agusan del Sur,L\n
-4,{},Aklan,L\n
-5,{},Albay,L\n
-6,{},Antique,L\n
-7,{},Apayao,L\n
-8,{},Aurora,L\n
-9,{},Basilan,L\n
-10,{},Bataan,L\n
-11,{},Batanes,L\n
-12,{},Batangas,L\n
-13,{},Benguet,L\n
-14,{},Biliran,L\n
-15,{},Bohol,L\n
-16,{},Bukidnon,L\n
-17,{},Bulacan,L\n
-18,{},Cagayan,L\n
-19,{},Camarines Norte,L\n
-20,{},Camarines Sur,L\n
-21,{},Camiguin,L\n
-22,{},Capiz,L\n
-23,{},Catanduanes,L\n
-24,{},Cavite,L\n
-25,{},Cebu,L\n
-26,{},Compostela Valley,L\n
-27,{},Davao del Norte,L\n
-28,{},Davao del Sur,L\n
-29,{},Davao Occidental,L\n
-30,{},Davao Oriental,L\n
-31,{},Dinagat Islands,L\n
-32,{},Eastern Samar,L\n
-33,{},Guimaras,L\n
-34,{},Ifugao,L\n
-35,{},Ilocos Norte,L\n
-36,{},Ilocos Sur,L\n
-37,{},Iloilo,L\n
-38,{},Isabela,L\n
-39,{},Kalinga,L\n
-40,{},La Union,L\n
-41,{},Laguna,R\n
-42,{},Lanao del Norte,R\n
-43,{},Lanao del Sur,R\n
-44,{},Leyte,R\n
-45,{},Maguindanao,R\n
-46,{},Marinduque,R\n
-47,{},Masbate,R\n
-48,{},Metropolitan Manila,R\n
-49,{},Misamis Occidental,R\n
-50,{},Misamis Oriental,R\n
-51,{},Mountain Province,R\n
-52,{},Negros Occidental,R\n
-53,{},Negros Oriental,R\n
-54,{},North Cotabato,R\n
-55,{},Northern Samar,R\n
-56,{},Nueva Ecija,R\n
-57,{},Nueva Vizcaya,R\n
-58,{},Occidental Mindoro,R\n
-59,{},Oriental Mindoro,R\n
-60,{},Palawan,R\n
-61,{},Pampanga,R\n
-62,{},Pangasinan,R\n
-63,{},Quezon,R\n
-64,{},Quirino,R\n
-65,{},Rizal,R\n
-66,{},Romblon,R\n
-67,{},Samar,R\n
-68,{},Sarangani,R\n
-69,{},Siquijor,R\n
-70,{},Sorsogon,R\n
-71,{},South Cotabato,R\n
-72,{},Southern Leyte,R\n
-73,{},Sultan Kudarat,R\n
-74,{},Sulu,R\n
-75,{},Surigao del Norte,R\n
-76,{},Surigao del Sur,R\n
-77,{},Tarlac,R\n
-78,{},Tawi-Tawi,R\n
-79,{},Zambales,R\n
-80,{},Zamboanga del Norte,R\n
-81,{},Zamboanga del Sur,R\n
-82,{},Zamboanga Sibugay,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Abra,L
+2,{},Agusan del Norte,L
+3,{},Agusan del Sur,L
+4,{},Aklan,L
+5,{},Albay,L
+6,{},Antique,L
+7,{},Apayao,L
+8,{},Aurora,L
+9,{},Basilan,L
+10,{},Bataan,L
+11,{},Batanes,L
+12,{},Batangas,L
+13,{},Benguet,L
+14,{},Biliran,L
+15,{},Bohol,L
+16,{},Bukidnon,L
+17,{},Bulacan,L
+18,{},Cagayan,L
+19,{},Camarines Norte,L
+20,{},Camarines Sur,L
+21,{},Camiguin,L
+22,{},Capiz,L
+23,{},Catanduanes,L
+24,{},Cavite,L
+25,{},Cebu,L
+26,{},Compostela Valley,L
+27,{},Davao del Norte,L
+28,{},Davao del Sur,L
+29,{},Davao Occidental,L
+30,{},Davao Oriental,L
+31,{},Dinagat Islands,L
+32,{},Eastern Samar,L
+33,{},Guimaras,L
+34,{},Ifugao,L
+35,{},Ilocos Norte,L
+36,{},Ilocos Sur,L
+37,{},Iloilo,L
+38,{},Isabela,L
+39,{},Kalinga,L
+40,{},La Union,L
+41,{},Laguna,R
+42,{},Lanao del Norte,R
+43,{},Lanao del Sur,R
+44,{},Leyte,R
+45,{},Maguindanao,R
+46,{},Marinduque,R
+47,{},Masbate,R
+48,{},Metropolitan Manila,R
+49,{},Misamis Occidental,R
+50,{},Misamis Oriental,R
+51,{},Mountain Province,R
+52,{},Negros Occidental,R
+53,{},Negros Oriental,R
+54,{},North Cotabato,R
+55,{},Northern Samar,R
+56,{},Nueva Ecija,R
+57,{},Nueva Vizcaya,R
+58,{},Occidental Mindoro,R
+59,{},Oriental Mindoro,R
+60,{},Palawan,R
+61,{},Pampanga,R
+62,{},Pangasinan,R
+63,{},Quezon,R
+64,{},Quirino,R
+65,{},Rizal,R
+66,{},Romblon,R
+67,{},Samar,R
+68,{},Sarangani,R
+69,{},Siquijor,R
+70,{},Sorsogon,R
+71,{},South Cotabato,R
+72,{},Southern Leyte,R
+73,{},Sultan Kudarat,R
+74,{},Sulu,R
+75,{},Surigao del Norte,R
+76,{},Surigao del Sur,R
+77,{},Tarlac,R
+78,{},Tawi-Tawi,R
+79,{},Zambales,R
+80,{},Zamboanga del Norte,R
+81,{},Zamboanga del Sur,R
+82,{},Zamboanga Sibugay,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

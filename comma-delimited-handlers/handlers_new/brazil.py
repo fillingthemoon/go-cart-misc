@@ -22,34 +22,34 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Acre,L\n
-2,{},Alagoas,L\n
-3,{},Amapa,L\n
-4,{},Amazonas,L\n
-5,{},Bahia,L\n
-6,{},Ceara,L\n
-7,{},Distrito Federal,L\n
-8,{},Espirito Santo,L\n
-9,{},Goias,L\n
-10,{},Maranhao,L\n
-11,{},Mato Grosso,L\n
-12,{},Mato Grosso do Sul,L\n
-13,{},Minas Gerais,L\n
-14,{},Para,R\n
-15,{},Paraiba,R\n
-16,{},Parana,R\n
-17,{},Pernambuco,R\n
-18,{},Piaui,R\n
-19,{},Rio de Janeiro,R\n
-20,{},Rio Grande do Norte,R\n
-21,{},Rio Grande do Sul,R\n
-22,{},Rondonia,R\n
-23,{},Roraima,R\n
-24,{},Santa Catarina,R\n
-25,{},Sao Paulo,R\n
-26,{},Sergipe,R\n
-27,{},Tocantins,R\n
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Acre,L
+2,{},Alagoas,L
+3,{},Amapa,L
+4,{},Amazonas,L
+5,{},Bahia,L
+6,{},Ceara,L
+7,{},Distrito Federal,L
+8,{},Espirito Santo,L
+9,{},Goias,L
+10,{},Maranhao,L
+11,{},Mato Grosso,L
+12,{},Mato Grosso do Sul,L
+13,{},Minas Gerais,L
+14,{},Para,R
+15,{},Paraiba,R
+16,{},Parana,R
+17,{},Pernambuco,R
+18,{},Piaui,R
+19,{},Rio de Janeiro,R
+20,{},Rio Grande do Norte,R
+21,{},Rio Grande do Sul,R
+22,{},Rondonia,R
+23,{},Roraima,R
+24,{},Santa Catarina,R
+25,{},Sao Paulo,R
+26,{},Sergipe,R
+27,{},Tocantins,R
 """.format(*values)
 
     def csv_to_area_string_and_colors(self, csvfile):

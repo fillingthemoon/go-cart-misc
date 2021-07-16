@@ -42,9 +42,9 @@ class BaseCartogramHandler:
     #   order:  An array contain the region names in the order they are found in the area data template. So, if your
     #           area data template looks like:
     #
-    #           1,{},RegionA,L\n
-    #           2,{},RegionB,R\n
-    #           3,{},RegionC,R\n
+    #           1,{},RegionA,L
+    #           2,{},RegionB,R
+    #           3,{},RegionC,R
     #           ...
     #           
     #           Then your array should look like ['RegionA','RegionB','RegionC',...]

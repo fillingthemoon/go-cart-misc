@@ -22,26 +22,26 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Abaco,L\n
-2,{},Acklins,L\n
-3,{},Andros,L\n
-4,{},Berry Islands,L\n
-5,{},Bimini,L\n
-6,{},Cat Island,L\n
-7,{},Crooked Island,L\n
-8,{},Eleuthera,L\n
-9,{},Exuma,L\n
-10,{},Grand Bahama,R\n
-11,{},Harbour Island,R\n
-12,{},Inagua,R\n
-13,{},Long Island,R\n
-14,{},Mayaguana,R\n
-15,{},New Providence,R\n
-16,{},Ragged Islands,R\n
-17,{},Rum Cay,R\n
-18,{},San Salvador,R\n
-19,{},Spanish Wells,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Abaco,L
+2,{},Acklins,L
+3,{},Andros,L
+4,{},Berry Islands,L
+5,{},Bimini,L
+6,{},Cat Island,L
+7,{},Crooked Island,L
+8,{},Eleuthera,L
+9,{},Exuma,L
+10,{},Grand Bahama,R
+11,{},Harbour Island,R
+12,{},Inagua,R
+13,{},Long Island,R
+14,{},Mayaguana,R
+15,{},New Providence,R
+16,{},Ragged Islands,R
+17,{},Rum Cay,R
+18,{},San Salvador,R
+19,{},Spanish Wells,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

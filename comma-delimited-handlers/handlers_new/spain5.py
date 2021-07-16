@@ -22,25 +22,25 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Andalucia,L\n
-2,{},Aragon,L\n
-3,{},Cantabria,L\n
-4,{},Castilla y Leon,L\n
-5,{},Castilla-La Mancha,L\n
-6,{},Cataluna,L\n
-7,{},Ceuta,L\n
-8,{},Comunidad de Madrid,L\n
-9,{},Comunidad Foral de Navarra,R\n
-10,{},Comunidad Valenciana,R\n
-11,{},Extremadura,R\n
-12,{},Galicia,R\n
-13,{},Islas Baleares,R\n
-14,{},La Rioja,R\n
-15,{},Melilla,R\n
-16,{},Pais Vasco,R\n
-17,{},Principado de Asturias,R\n
-18,{},Region de Murcia,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Andalucia,L
+2,{},Aragon,L
+3,{},Cantabria,L
+4,{},Castilla y Leon,L
+5,{},Castilla-La Mancha,L
+6,{},Cataluna,L
+7,{},Ceuta,L
+8,{},Comunidad de Madrid,L
+9,{},Comunidad Foral de Navarra,R
+10,{},Comunidad Valenciana,R
+11,{},Extremadura,R
+12,{},Galicia,R
+13,{},Islas Baleares,R
+14,{},La Rioja,R
+15,{},Melilla,R
+16,{},Pais Vasco,R
+17,{},Principado de Asturias,R
+18,{},Region de Murcia,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

@@ -17,14 +17,14 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Bagmati Pradesh,L\n
-2,{},Gandaki Pradesh,L\n
-3,{},Karnali Pradesh,L\n
-4,{},Province No. 1,R\n
-5,{},Province No. 2,R\n
-6,{},Province No. 5,R\n
-7,{},Sudurpashchim Pradesh,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Bagmati Pradesh,L
+2,{},Gandaki Pradesh,L
+3,{},Karnali Pradesh,L
+4,{},Province No. 1,R
+5,{},Province No. 2,R
+6,{},Province No. 5,R
+7,{},Sudurpashchim Pradesh,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

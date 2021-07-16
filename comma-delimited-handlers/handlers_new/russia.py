@@ -22,90 +22,90 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Adygey,L\n
-2,{},Altay,L\n
-3,{},Amur,L\n
-4,{},Arkhangel'sk,L\n
-5,{},Astrakhan',L\n
-6,{},Bashkortostan,L\n
-7,{},Belgorod,L\n
-8,{},Bryansk,L\n
-9,{},Buryat,L\n
-10,{},Chechnya,L\n
-11,{},Chelyabinsk,L\n
-12,{},Chukot,L\n
-13,{},Chuvash,L\n
-14,{},City of St. Petersburg,L\n
-15,{},Dagestan,L\n
-16,{},Gorno-Altay,L\n
-17,{},Ingush,L\n
-18,{},Irkutsk,L\n
-19,{},Ivanovo,L\n
-20,{},Kabardin-Balkar,L\n
-21,{},Kaliningrad,L\n
-22,{},Kalmyk,L\n
-23,{},Kaluga,L\n
-24,{},Kamchatka,L\n
-25,{},Karachay-Cherkess,L\n
-26,{},Karelia,L\n
-27,{},Kemerovo,L\n
-28,{},Khabarovsk,L\n
-29,{},Khakass,L\n
-30,{},Khanty-Mansiy,L\n
-31,{},Kirov,L\n
-32,{},Komi,L\n
-33,{},Kostroma,L\n
-34,{},Krasnodar,L\n
-35,{},Krasnoyarsk,L\n
-36,{},Kurgan,L\n
-37,{},Kursk,L\n
-38,{},Leningrad,L\n
-39,{},Lipetsk,L\n
-40,{},Maga Buryatdan,L\n
-41,{},Mariy-El,L\n
-42,{},Mordovia,R\n
-43,{},Moscow City,R\n
-44,{},Moskva,R\n
-45,{},Murmansk,R\n
-46,{},Nenets,R\n
-47,{},Nizhegorod,R\n
-48,{},North Ossetia,R\n
-49,{},Novgorod,R\n
-50,{},Novosibirsk,R\n
-51,{},Omsk,R\n
-52,{},Orel,R\n
-53,{},Orenburg,R\n
-54,{},Penza,R\n
-55,{},Perm',R\n
-56,{},Primor'ye,R\n
-57,{},Pskov,R\n
-58,{},Rostov,R\n
-59,{},Ryazan',R\n
-60,{},Sakha,R\n
-61,{},Sakhalin,R\n
-62,{},Samara,R\n
-63,{},Saratov,R\n
-64,{},Smolensk,R\n
-65,{},Stavropol',R\n
-66,{},Sverdlovsk,R\n
-67,{},Tambov,R\n
-68,{},Tatarstan,R\n
-69,{},Tomsk,R\n
-70,{},Tula,R\n
-71,{},Tuva,R\n
-72,{},Tver',R\n
-73,{},Tyumen',R\n
-74,{},Udmurt,R\n
-75,{},Ul'yanovsk,R\n
-76,{},Vladimir,R\n
-77,{},Volgograd,R\n
-78,{},Vologda,R\n
-79,{},Voronezh,R\n
-80,{},Yamal-Nenets,R\n
-81,{},Yaroslavl',R\n
-82,{},Yevrey,R\n
-83,{},Zabaykal'ye,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Adygey,L
+2,{},Altay,L
+3,{},Amur,L
+4,{},Arkhangel'sk,L
+5,{},Astrakhan',L
+6,{},Bashkortostan,L
+7,{},Belgorod,L
+8,{},Bryansk,L
+9,{},Buryat,L
+10,{},Chechnya,L
+11,{},Chelyabinsk,L
+12,{},Chukot,L
+13,{},Chuvash,L
+14,{},City of St. Petersburg,L
+15,{},Dagestan,L
+16,{},Gorno-Altay,L
+17,{},Ingush,L
+18,{},Irkutsk,L
+19,{},Ivanovo,L
+20,{},Kabardin-Balkar,L
+21,{},Kaliningrad,L
+22,{},Kalmyk,L
+23,{},Kaluga,L
+24,{},Kamchatka,L
+25,{},Karachay-Cherkess,L
+26,{},Karelia,L
+27,{},Kemerovo,L
+28,{},Khabarovsk,L
+29,{},Khakass,L
+30,{},Khanty-Mansiy,L
+31,{},Kirov,L
+32,{},Komi,L
+33,{},Kostroma,L
+34,{},Krasnodar,L
+35,{},Krasnoyarsk,L
+36,{},Kurgan,L
+37,{},Kursk,L
+38,{},Leningrad,L
+39,{},Lipetsk,L
+40,{},Maga Buryatdan,L
+41,{},Mariy-El,L
+42,{},Mordovia,R
+43,{},Moscow City,R
+44,{},Moskva,R
+45,{},Murmansk,R
+46,{},Nenets,R
+47,{},Nizhegorod,R
+48,{},North Ossetia,R
+49,{},Novgorod,R
+50,{},Novosibirsk,R
+51,{},Omsk,R
+52,{},Orel,R
+53,{},Orenburg,R
+54,{},Penza,R
+55,{},Perm',R
+56,{},Primor'ye,R
+57,{},Pskov,R
+58,{},Rostov,R
+59,{},Ryazan',R
+60,{},Sakha,R
+61,{},Sakhalin,R
+62,{},Samara,R
+63,{},Saratov,R
+64,{},Smolensk,R
+65,{},Stavropol',R
+66,{},Sverdlovsk,R
+67,{},Tambov,R
+68,{},Tatarstan,R
+69,{},Tomsk,R
+70,{},Tula,R
+71,{},Tuva,R
+72,{},Tver',R
+73,{},Tyumen',R
+74,{},Udmurt,R
+75,{},Ul'yanovsk,R
+76,{},Vladimir,R
+77,{},Volgograd,R
+78,{},Vologda,R
+79,{},Voronezh,R
+80,{},Yamal-Nenets,R
+81,{},Yaroslavl',R
+82,{},Yevrey,R
+83,{},Zabaykal'ye,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

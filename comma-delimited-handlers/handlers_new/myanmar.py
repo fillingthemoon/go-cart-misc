@@ -22,22 +22,22 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Ayeyarwady,L\n
-2,{},Bago,L\n
-3,{},Chin,L\n
-4,{},Kachin,L\n
-5,{},Kayah,L\n
-6,{},Kayin,L\n
-7,{},Magway,L\n
-8,{},Mandalay,R\n
-9,{},Mon,R\n
-10,{},Naypyitaw,R\n
-11,{},Rakhine,R\n
-12,{},Sagaing,R\n
-13,{},Shan,R\n
-14,{},Tanintharyi,R\n
-15,{},Yangon,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Ayeyarwady,L
+2,{},Bago,L
+3,{},Chin,L
+4,{},Kachin,L
+5,{},Kayah,L
+6,{},Kayin,L
+7,{},Magway,L
+8,{},Mandalay,R
+9,{},Mon,R
+10,{},Naypyitaw,R
+11,{},Rakhine,R
+12,{},Sagaing,R
+13,{},Shan,R
+14,{},Tanintharyi,R
+15,{},Yangon,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

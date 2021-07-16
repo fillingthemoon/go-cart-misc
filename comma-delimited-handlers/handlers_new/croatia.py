@@ -22,28 +22,28 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Bjelovar-Bilogora,L\n
-2,{},Brod-Posavina,L\n
-3,{},Dubrovnik-Neretva,L\n
-4,{},City of Zagreb,L\n
-5,{},Istria,L\n
-6,{},Karlovac,L\n
-7,{},Koprivnica-Krizevci,L\n
-8,{},Krapina-Zagorje,L\n
-9,{},Lika-Senj,L\n
-10,{},Medimurje,L\n
-11,{},Osijek-Baranja,R\n
-12,{},Pozega-Slavonia,R\n
-13,{},Primorje-Gorski Kotar,R\n
-14,{},Sibenik-Knin,R\n
-15,{},Sisak-Moslavina,R\n
-16,{},Split-Dalmatia,R\n
-17,{},Varazdin,R\n
-18,{},Virovitica-Podravina,R\n
-19,{},Vukovar-Srijem,R\n
-20,{},Zadar,R\n
-21,{},Zagreb County,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Bjelovar-Bilogora,L
+2,{},Brod-Posavina,L
+3,{},Dubrovnik-Neretva,L
+4,{},City of Zagreb,L
+5,{},Istria,L
+6,{},Karlovac,L
+7,{},Koprivnica-Krizevci,L
+8,{},Krapina-Zagorje,L
+9,{},Lika-Senj,L
+10,{},Medimurje,L
+11,{},Osijek-Baranja,R
+12,{},Pozega-Slavonia,R
+13,{},Primorje-Gorski Kotar,R
+14,{},Sibenik-Knin,R
+15,{},Sisak-Moslavina,R
+16,{},Split-Dalmatia,R
+17,{},Varazdin,R
+18,{},Virovitica-Podravina,R
+19,{},Vukovar-Srijem,R
+20,{},Zadar,R
+21,{},Zagreb County,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

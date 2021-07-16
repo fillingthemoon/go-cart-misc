@@ -22,84 +22,84 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Amnat Charoen,L\n
-2,{},Ang Thong,L\n
-3,{},Bangkok Metropolis,L\n
-4,{},Bueng Kan,L\n
-5,{},Buri Ram,L\n
-6,{},Chachoengsao,L\n
-7,{},Chai Nat,L\n
-8,{},Chaiyaphum,L\n
-9,{},Chanthaburi,L\n
-10,{},Chiang Mai,L\n
-11,{},Chiang Rai,L\n
-12,{},Chon Buri,L\n
-13,{},Chumphon,L\n
-14,{},Kalasin,L\n
-15,{},Kamphaeng Phet,L\n
-16,{},Kanchanaburi,L\n
-17,{},Khon Kaen,L\n
-18,{},Krabi,L\n
-19,{},Lampang,L\n
-20,{},Lamphun,L\n
-21,{},Loei,L\n
-22,{},Lop Buri,L\n
-23,{},Mae Hong Son,L\n
-24,{},Maha Sarakham,L\n
-25,{},Mukdahan,L\n
-26,{},Nakhon Nayok,L\n
-27,{},Nakhon Pathom,L\n
-28,{},Nakhon Phanom,L\n
-29,{},Nakhon Ratchasima,L\n
-30,{},Nakhon Sawan,L\n
-31,{},Nakhon Si Thammarat,L\n
-32,{},Nan,L\n
-33,{},Narathiwat,L\n
-34,{},Nong Bua Lam Phu,L\n
-35,{},Nong Khai,L\n
-36,{},Nonthaburi,L\n
-37,{},Pathum Thani,L\n
-38,{},Pattani,L\n
-39,{},Phangnga,R\n
-40,{},Phatthalung,R\n
-41,{},Phayao,R\n
-42,{},Phetchabun,R\n
-43,{},Phetchaburi,R\n
-44,{},Phichit,R\n
-45,{},Phitsanulok,R\n
-46,{},Phra Nakhon Si Ayutthaya,R\n
-47,{},Phrae,R\n
-48,{},Phuket,R\n
-49,{},Prachin Buri,R\n
-50,{},Prachuap Khiri Khan,R\n
-51,{},Ranong,R\n
-52,{},Ratchaburi,R\n
-53,{},Rayong,R\n
-54,{},Roi Et,R\n
-55,{},Sa Kaeo,R\n
-56,{},Sakon Nakhon,R\n
-57,{},Samut Prakan,R\n
-58,{},Samut Sakhon,R\n
-59,{},Samut Songkhram,R\n
-60,{},Saraburi,R\n
-61,{},Satun,R\n
-62,{},Si Sa Ket,R\n
-63,{},Sing Buri,R\n
-64,{},Songkhla,R\n
-65,{},Sukhothai,R\n
-66,{},Suphan Buri,R\n
-67,{},Surat Thani,R\n
-68,{},Surin,R\n
-69,{},Tak,R\n
-70,{},Trang,R\n
-71,{},Trat,R\n
-72,{},Ubon Ratchathani,R\n
-73,{},Udon Thani,R\n
-74,{},Uthai Thani,R\n
-75,{},Uttaradit,R\n
-76,{},Yala,R\n
-77,{},Yasothon,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Amnat Charoen,L
+2,{},Ang Thong,L
+3,{},Bangkok Metropolis,L
+4,{},Bueng Kan,L
+5,{},Buri Ram,L
+6,{},Chachoengsao,L
+7,{},Chai Nat,L
+8,{},Chaiyaphum,L
+9,{},Chanthaburi,L
+10,{},Chiang Mai,L
+11,{},Chiang Rai,L
+12,{},Chon Buri,L
+13,{},Chumphon,L
+14,{},Kalasin,L
+15,{},Kamphaeng Phet,L
+16,{},Kanchanaburi,L
+17,{},Khon Kaen,L
+18,{},Krabi,L
+19,{},Lampang,L
+20,{},Lamphun,L
+21,{},Loei,L
+22,{},Lop Buri,L
+23,{},Mae Hong Son,L
+24,{},Maha Sarakham,L
+25,{},Mukdahan,L
+26,{},Nakhon Nayok,L
+27,{},Nakhon Pathom,L
+28,{},Nakhon Phanom,L
+29,{},Nakhon Ratchasima,L
+30,{},Nakhon Sawan,L
+31,{},Nakhon Si Thammarat,L
+32,{},Nan,L
+33,{},Narathiwat,L
+34,{},Nong Bua Lam Phu,L
+35,{},Nong Khai,L
+36,{},Nonthaburi,L
+37,{},Pathum Thani,L
+38,{},Pattani,L
+39,{},Phangnga,R
+40,{},Phatthalung,R
+41,{},Phayao,R
+42,{},Phetchabun,R
+43,{},Phetchaburi,R
+44,{},Phichit,R
+45,{},Phitsanulok,R
+46,{},Phra Nakhon Si Ayutthaya,R
+47,{},Phrae,R
+48,{},Phuket,R
+49,{},Prachin Buri,R
+50,{},Prachuap Khiri Khan,R
+51,{},Ranong,R
+52,{},Ratchaburi,R
+53,{},Rayong,R
+54,{},Roi Et,R
+55,{},Sa Kaeo,R
+56,{},Sakon Nakhon,R
+57,{},Samut Prakan,R
+58,{},Samut Sakhon,R
+59,{},Samut Songkhram,R
+60,{},Saraburi,R
+61,{},Satun,R
+62,{},Si Sa Ket,R
+63,{},Sing Buri,R
+64,{},Songkhla,R
+65,{},Sukhothai,R
+66,{},Suphan Buri,R
+67,{},Surat Thani,R
+68,{},Surin,R
+69,{},Tak,R
+70,{},Trang,R
+71,{},Trat,R
+72,{},Ubon Ratchathani,R
+73,{},Udon Thani,R
+74,{},Uthai Thani,R
+75,{},Uttaradit,R
+76,{},Yala,R
+77,{},Yasothon,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

@@ -22,23 +22,23 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-15,{},Greater Poland	,L\n
-13,{},Holy Cross,L\n
-2,{},Kuyavian-Pomeranian,L\n
-6,{},Lesser Poland,L\n
-3,{},Lodz,L\n
-1,{},Lower Silesian,L\n
-4,{},Lublin,L\n
-5,{},Lubusz,R\n
-7,{},Masovian,R\n
-8,{},Opole,R\n
-10,{},Podlaskie,R\n
-11,{},Pomeranian,R\n
-12,{},Silesian,R\n
-9,{},Subcarpathian,R\n
-14,{},Warmian-Masurian,R\n
-16,{},West Pomeranian,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+15,{},Greater Poland	,L
+13,{},Holy Cross,L
+2,{},Kuyavian-Pomeranian,L
+6,{},Lesser Poland,L
+3,{},Lodz,L
+1,{},Lower Silesian,L
+4,{},Lublin,L
+5,{},Lubusz,R
+7,{},Masovian,R
+8,{},Opole,R
+10,{},Podlaskie,R
+11,{},Pomeranian,R
+12,{},Silesian,R
+9,{},Subcarpathian,R
+14,{},Warmian-Masurian,R
+16,{},West Pomeranian,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

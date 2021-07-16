@@ -22,16 +22,16 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Chuquisaca,L\n
-2,{},Cochabamba,L\n
-3,{},Beni,L\n
-4,{},La Paz,L\n
-5,{},Oruro,R\n
-6,{},Pando,R\n
-7,{},Potosi,R\n
-8,{},Santa Cruz,R\n
-9,{},Tarija,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Chuquisaca,L
+2,{},Cochabamba,L
+3,{},Beni,L
+4,{},La Paz,L
+5,{},Oruro,R
+6,{},Pando,R
+7,{},Potosi,R
+8,{},Santa Cruz,R
+9,{},Tarija,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

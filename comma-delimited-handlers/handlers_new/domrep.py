@@ -17,39 +17,39 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Azua,L\n
-2,{},Bahoruco,L\n
-3,{},Barahona,L\n
-4,{},Dajabon,L\n
-5,{},Distrito Nacional,L\n
-6,{},Duarte,L\n
-7,{},El Seibo,L\n
-8,{},Espaillat,L\n
-9,{},Hato Mayor,L\n
-10,{},Hermanas Mirabal,L\n
-11,{},Independencia,L\n
-12,{},La Altagracia,L\n
-13,{},Elias Pina,L\n
-14,{},La Romana,L\n
-15,{},La Vega,L\n
-16,{},Maria Trinidad Sanchez,R\n
-17,{},Monsenor Nouel,R\n
-18,{},Monte Cristi,R\n
-19,{},Monte Plata,R\n
-20,{},Pedernales,R\n
-21,{},Peravia,R\n
-22,{},Puerto Plata,R\n
-23,{},Samana,R\n
-24,{},San Cristobal,R\n
-25,{},San Jose de Ocoa,R\n
-26,{},San Juan,R\n
-27,{},San Pedro de Macoris,R\n
-28,{},Sanchez Ramirez,R\n
-29,{},Santiago,R\n
-30,{},Santiago Rodriguez,R\n
-31,{},Santo Domingo,R\n
-32,{},Valverde,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Azua,L
+2,{},Bahoruco,L
+3,{},Barahona,L
+4,{},Dajabon,L
+5,{},Distrito Nacional,L
+6,{},Duarte,L
+7,{},El Seibo,L
+8,{},Espaillat,L
+9,{},Hato Mayor,L
+10,{},Hermanas Mirabal,L
+11,{},Independencia,L
+12,{},La Altagracia,L
+13,{},Elias Pina,L
+14,{},La Romana,L
+15,{},La Vega,L
+16,{},Maria Trinidad Sanchez,R
+17,{},Monsenor Nouel,R
+18,{},Monte Cristi,R
+19,{},Monte Plata,R
+20,{},Pedernales,R
+21,{},Peravia,R
+22,{},Puerto Plata,R
+23,{},Samana,R
+24,{},San Cristobal,R
+25,{},San Jose de Ocoa,R
+26,{},San Juan,R
+27,{},San Pedro de Macoris,R
+28,{},Sanchez Ramirez,R
+29,{},Santiago,R
+30,{},Santiago Rodriguez,R
+31,{},Santo Domingo,R
+32,{},Valverde,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

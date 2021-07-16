@@ -22,22 +22,22 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Harju,L\n
-2,{},Hiiu,L\n
-3,{},Ida-Viru,L\n
-4,{},Jarva,L\n
-5,{},Jogeva,L\n
-6,{},Laane,L\n
-7,{},Laane-Viru,L\n
-8,{},Parnu,R\n
-9,{},Polva,R\n
-10,{},Rapla,R\n
-11,{},Saare,R\n
-12,{},Tartu,R\n
-13,{},Valga,R\n
-14,{},Vilijandi,R\n
-15,{},Voru,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Harju,L
+2,{},Hiiu,L
+3,{},Ida-Viru,L
+4,{},Jarva,L
+5,{},Jogeva,L
+6,{},Laane,L
+7,{},Laane-Viru,L
+8,{},Parnu,R
+9,{},Polva,R
+10,{},Rapla,R
+11,{},Saare,R
+12,{},Tartu,R
+13,{},Valga,R
+14,{},Vilijandi,R
+15,{},Voru,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

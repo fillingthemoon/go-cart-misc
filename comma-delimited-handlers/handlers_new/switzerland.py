@@ -22,33 +22,33 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Aargau,L\n
-2,{},Appenzell Ausserrhoden,L\n
-3,{},Appenzell Innerrhoden,L\n
-4,{},Basel-Landschaft,L\n
-5,{},Basel-Stadt,L\n
-6,{},Bern,L\n
-7,{},Fribourg,L\n
-8,{},Geneva,L\n
-9,{},Glarus,L\n
-10,{},Graubunden,L\n
-11,{},Jura,L\n
-12,{},Lucerne,L\n
-13,{},Neuchatel,R\n
-14,{},Nidwalden,R\n
-15,{},Obwalden,R\n
-16,{},Sankt Gallen,R\n
-17,{},Schaffhausen,R\n
-18,{},Schwyz,R\n
-19,{},Solothurn,R\n
-20,{},Thurgau,R\n
-21,{},Ticino,R\n
-22,{},Uri,R\n
-23,{},Valais,R\n
-24,{},Vaud,R\n
-25,{},Zug,R\n
-26,{},Zurich,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Aargau,L
+2,{},Appenzell Ausserrhoden,L
+3,{},Appenzell Innerrhoden,L
+4,{},Basel-Landschaft,L
+5,{},Basel-Stadt,L
+6,{},Bern,L
+7,{},Fribourg,L
+8,{},Geneva,L
+9,{},Glarus,L
+10,{},Graubunden,L
+11,{},Jura,L
+12,{},Lucerne,L
+13,{},Neuchatel,R
+14,{},Nidwalden,R
+15,{},Obwalden,R
+16,{},Sankt Gallen,R
+17,{},Schaffhausen,R
+18,{},Schwyz,R
+19,{},Solothurn,R
+20,{},Thurgau,R
+21,{},Ticino,R
+22,{},Uri,R
+23,{},Valais,R
+24,{},Vaud,R
+25,{},Zug,R
+26,{},Zurich,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

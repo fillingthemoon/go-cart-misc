@@ -22,33 +22,33 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Carlow,L\n
-2,{},Cavan,L\n
-3,{},Clare,L\n
-4,{},Cork,L\n
-5,{},Donegal,L\n
-6,{},Dublin,L\n
-7,{},Galway,L\n
-8,{},Kerry,L\n
-9,{},Kildare,L\n
-10,{},Kilkenny,L\n
-11,{},Laoighis,L\n
-12,{},Leitrim,L\n
-13,{},Limerick,R\n
-14,{},Longford,R\n
-15,{},Louth,R\n
-16,{},Mayo,R\n
-17,{},Meath,R\n
-18,{},Monaghan,R\n
-19,{},Offaly,R\n
-20,{},Roscommon,R\n
-21,{},Sligo,R\n
-22,{},Tipperary,R\n
-23,{},Waterford,R\n
-24,{},Westmeath,R\n
-25,{},Wexford,R\n
-26,{},Wicklow,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Carlow,L
+2,{},Cavan,L
+3,{},Clare,L
+4,{},Cork,L
+5,{},Donegal,L
+6,{},Dublin,L
+7,{},Galway,L
+8,{},Kerry,L
+9,{},Kildare,L
+10,{},Kilkenny,L
+11,{},Laoighis,L
+12,{},Leitrim,L
+13,{},Limerick,R
+14,{},Longford,R
+15,{},Louth,R
+16,{},Mayo,R
+17,{},Meath,R
+18,{},Monaghan,R
+19,{},Offaly,R
+20,{},Roscommon,R
+21,{},Sligo,R
+22,{},Tipperary,R
+23,{},Waterford,R
+24,{},Westmeath,R
+25,{},Wexford,R
+26,{},Wicklow,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

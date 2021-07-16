@@ -17,25 +17,25 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Alto Paraguay,L\n
-2,{},Alto Parana,L\n
-3,{},Amambay,L\n
-4,{},Asuncion,L\n
-5,{},Boqueron,L\n
-6,{},Caaguazu,L\n
-7,{},Caazapa,L\n
-8,{},Canindeyu,L\n
-9,{},Central,R\n
-10,{},Concepcion,R\n
-11,{},Cordillera,R\n
-12,{},Guaira,R\n
-13,{},Itapua,R\n
-14,{},Misiones,R\n
-15,{},Neembucu,R\n
-16,{},Paraguari,R\n
-17,{},Presidente Hayes,R\n
-18,{},San Pedro,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Alto Paraguay,L
+2,{},Alto Parana,L
+3,{},Amambay,L
+4,{},Asuncion,L
+5,{},Boqueron,L
+6,{},Caaguazu,L
+7,{},Caazapa,L
+8,{},Canindeyu,L
+9,{},Central,R
+10,{},Concepcion,R
+11,{},Cordillera,R
+12,{},Guaira,R
+13,{},Itapua,R
+14,{},Misiones,R
+15,{},Neembucu,R
+16,{},Paraguari,R
+17,{},Presidente Hayes,R
+18,{},San Pedro,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

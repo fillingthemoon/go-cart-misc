@@ -22,18 +22,18 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Addis Abeba,L\n
-2,{},Afar,L\n
-3,{},Amhara,L\n
-4,{},Benshangul-Gumaz,L\n
-5,{},Dire Dawa,L\n
-6,{},Gambela,R\n
-7,{},Harari,R\n
-8,{},Oromia,R\n
-9,{},Somali,R\n
-10,{},Southern Nations, Nationalities and Peoples,R\n
-11,{},Tigray,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Addis Abeba,L
+2,{},Afar,L
+3,{},Amhara,L
+4,{},Benshangul-Gumaz,L
+5,{},Dire Dawa,L
+6,{},Gambela,R
+7,{},Harari,R
+8,{},Oromia,R
+9,{},Somali,R
+10,{},Southern Nations, Nationalities and Peoples,R
+11,{},Tigray,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

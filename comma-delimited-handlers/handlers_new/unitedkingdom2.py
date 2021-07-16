@@ -22,11 +22,11 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},England,L\n
-2,{},Northern Ireland,R\n
-3,{},Scotland,R\n
-4,{},Wales,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},England,L
+2,{},Northern Ireland,R
+3,{},Scotland,R
+4,{},Wales,R""".format(*values)
     
     def expect_geojson_output(self):
         return True

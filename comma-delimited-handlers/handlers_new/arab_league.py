@@ -22,29 +22,29 @@ class CartogramHandler(handlers.base_handler.BaseCartogramHandler):
         return True
     
     def gen_area_data(self, values):
-        return """cartogram_id,Region Data,Region Name,Inset\n
-1,{},Algeria,L\n
-2,{},Bahrain,L\n
-3,{},Comoros,L\n
-4,{},Djibouti,L\n
-5,{},Egypt,L\n
-6,{},Iraq,L\n
-7,{},Jordan,L\n
-8,{},Kuwait,L\n
-9,{},Lebanon,L\n
-10,{},Libya,L\n
-11,{},Mauritania,R\n
-12,{},Morocco,R\n
-13,{},Oman,R\n
-14,{},Palestine,R\n
-15,{},Qatar,R\n
-16,{},Saudi Arabia,R\n
-17,{},Somalia,R\n
-18,{},Sudan,R\n
-19,{},Syria,R\n
-20,{},Tunisia,R\n
-21,{},United Arab Emirates,R\n
-22,{},Yemen,R\n""".format(*values)
+        return """cartogram_id,Region Data,Region Name,Inset
+1,{},Algeria,L
+2,{},Bahrain,L
+3,{},Comoros,L
+4,{},Djibouti,L
+5,{},Egypt,L
+6,{},Iraq,L
+7,{},Jordan,L
+8,{},Kuwait,L
+9,{},Lebanon,L
+10,{},Libya,L
+11,{},Mauritania,R
+12,{},Morocco,R
+13,{},Oman,R
+14,{},Palestine,R
+15,{},Qatar,R
+16,{},Saudi Arabia,R
+17,{},Somalia,R
+18,{},Sudan,R
+19,{},Syria,R
+20,{},Tunisia,R
+21,{},United Arab Emirates,R
+22,{},Yemen,R""".format(*values)
     
     def expect_geojson_output(self):
         return True
