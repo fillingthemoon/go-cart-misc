@@ -1,0 +1,50 @@
+Region Id,Region Data,Region Name,Region Abbreviation,Colour
+1,9,Alabama,AL,#7570b3
+2,11,Arizona,AZ,#e7298a
+3,6,Arkansas,AR,#7570b3
+4,55,California,CA,#66a61e
+5,9,Colorado,CO,#7570b3
+6,7,Connecticut,CT,#d95f02
+7,3,Delaware,DE,#e7298a
+8,3,District of Columbia,DC,#1b9e77
+9,29,Florida,FL,#1b9e77
+10,16,Georgia,GA,#66a61e
+11,4,Idaho,ID,#1b9e77
+12,20,Illinois,IL,#7570b3
+13,11,Indiana,IN,#e6ab02
+14,6,Iowa,IO,#d95f02
+15,6,Kansas,KS,#66a61e
+16,8,Kentucky,KY,#e7298a
+17,8,Louisiana,LA,#e6ab02
+18,4,Maine,ME,#66a61e
+19,10,Maryland,MD,#d95f02
+20,11,Massachusetts,MA,#1b9e77
+21,16,Michigan,MI,#d95f02
+22,10,Minnesota,MN,#7570b3
+23,6,Mississippi,MS,#66a61e
+24,10,Missouri,MO,#1b9e77
+25,3,Montana,MT,#d95f02
+26,5,Nebraska,NE,#e7298a
+27,6,Nevada,NV,#e6ab02
+28,4,New Hampshire,NH,#7570b3
+29,14,New Jersey,NJ,#1b9e77
+30,5,New Mexico,NM,#e6ab02
+31,29,New York,NY,#e7298a
+32,15,North Carolina,NC,#1b9e77
+33,3,North Dakota,ND,#e6ab02
+34,18,Ohio,OH,#66a61e
+35,7,Oklahoma,OK,#d95f02
+36,7,Oregon,OR,#e7298a
+37,20,Pennsylvania,PA,#7570b3
+38,4,Rhode Island,RH,#e7298a
+39,9,South Carolina,SC,#e6ab02
+40,3,South Dakota,SD,#66a61e
+41,11,Tennessee,TN,#d95f02
+42,38,Texas,TX,#e7298a
+43,6,Utah,UT,#66a61e
+44,3,Vermont,VT,#d95f02
+45,13,Virginia,VA,#e6ab02
+46,12,Washington,WA,#7570b3
+47,5,West Virginia,WV,#1b9e77
+48,10,Wisconsin,WI,#1b9e77
+49,3,Wyoming,WY,#e6ab02

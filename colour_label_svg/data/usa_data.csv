@@ -1,0 +1,50 @@
+Region Id,Region Data,Region Name,Region Abbreviation
+1,9,Alabama,AL
+2,11,Arizona,AZ
+3,6,Arkansas,AR
+4,55,California,CA
+5,9,Colorado,CO
+6,7,Connecticut,CT
+7,3,Delaware,DE
+8,3,District of Columbia,DC
+9,29,Florida,FL
+10,16,Georgia,GA
+11,4,Idaho,ID
+12,20,Illinois,IL
+13,11,Indiana,IN
+14,6,Iowa,IO
+15,6,Kansas,KS
+16,8,Kentucky,KY
+17,8,Louisiana,LA
+18,4,Maine,ME
+19,10,Maryland,MD
+20,11,Massachusetts,MA
+21,16,Michigan,MI
+22,10,Minnesota,MN
+23,6,Mississippi,MS
+24,10,Missouri,MO
+25,3,Montana,MT
+26,5,Nebraska,NE
+27,6,Nevada,NV
+28,4,New Hampshire,NH
+29,14,New Jersey,NJ
+30,5,New Mexico,NM
+31,29,New York,NY
+32,15,North Carolina,NC
+33,3,North Dakota,ND
+34,18,Ohio,OH
+35,7,Oklahoma,OK
+36,7,Oregon,OR
+37,20,Pennsylvania,PA
+38,4,Rhode Island,RH
+39,9,South Carolina,SC
+40,3,South Dakota,SD
+41,11,Tennessee,TN
+42,38,Texas,TX
+43,6,Utah,UT
+44,3,Vermont,VT
+45,13,Virginia,VA
+46,12,Washington,WA
+47,5,West Virginia,WV
+48,10,Wisconsin,WI
+49,3,Wyoming,WY

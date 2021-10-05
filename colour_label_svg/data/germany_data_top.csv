@@ -1,0 +1,17 @@
+Region Id,Region Data,Region Name,Region Abbreviation,Colour
+1,493265,Baden-Wuerttemberg,BW,#e7298a
+2,594447,Bayern,BY,#e6ab02
+3,136614,Berlin,BE,#e7298a
+4,69132,Brandenburg,BB,#7570b3
+5,33662,Bremen,HB,#7570b3
+6,117572,Hamburg,HH,#d95f02
+7,279085,Hessen,HE,#d95f02
+8,42783,Mecklenburg-Vorpommern,MV,#66a61e
+9,287959,Niedersachsen,NI,#1b9e77
+10,691518,Nordrhein-Westfalen,NW,#7570b3
+11,144308,Rheinland-Pfalz,RP,#66a61e
+12,35300,Saarland,SL,#1b9e77
+13,121738,Sachsen,SN,#1b9e77
+14,60095,Sachsen-Anhalt,ST,#d95f02
+15,93367,Schleswig-Holstein,SH,#e6ab02
+16,61907,Thueringen,TH,#e7298a

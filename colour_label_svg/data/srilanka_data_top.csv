@@ -1,0 +1,26 @@
+Region Id,Region Data,Region Name,Region Abbreviation,Colour
+1,1002,Ampara,APR,#7570b3
+2,2259,Anuradhapura,AD,#d95f02
+3,2214,Badulla,BD,#e7298a
+4,624,Batticaloa,BC,#1b9e77
+5,864,Colombo,CO,#e6ab02
+6,1209,Galle,GL,#d95f02
+7,1670,Gampaha,GQ,#1b9e77
+8,1060,Hambantota,HB,#d95f02
+9,804,Jaffna,JA,#1b9e77
+10,1115,Kalutara,KT,#7570b3
+11,2027,Kandy,KY,#d95f02
+12,1781,Kegalle,KE,#66a61e
+13,804,Kilinochchi,KL,#66a61e
+14,2576,Kurunegala,KG,#e6ab02
+15,540,Mannar,MB,#7570b3
+16,865,Matale,MT,#1b9e77
+17,935,Matara,MH,#e6ab02
+18,1321,Moneragala,MJ,#66a61e
+19,622,Mullaitivu,MP,#e7298a
+20,1097,Nuwara Eliya,NW,#7570b3
+21,882,Polonnaruwa,PR,#e7298a
+22,1525,Puttalam,PX,#e7298a
+23,2230,Ratnapura,RN,#1b9e77
+24,666,Trincomalee,TC,#66a61e
+25,609,Vavuniya,VA,#e6ab02
